@@ -6,6 +6,10 @@
   --paleOrange: #fdd6ba;
   --lightCream: #f3fcf7;
   --grey: #83888f;
+
+  /* intentions */
+
+  --appBg: var(--lightCream);
 }
 
 html,
