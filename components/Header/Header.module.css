@@ -8,6 +8,7 @@
 .logoLink {
   max-width: 163px;
   width: 100%;
+  color: var(--textDark);
 }
 
 .linkGroup {

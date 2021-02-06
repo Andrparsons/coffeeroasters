@@ -12,6 +12,12 @@
   --appBg: var(--lightCream);
   --headerLink: var(--grey);
   --headerLinkHover: var(--darkGreyBlue);
+  --footerLink: var(--grey);
+  --footerLinkHover: var(--lightCream);
+  --iconHover: var(--paleOrange);
+  --textDark: var(--darkGreyBlue);
+  --textLight: var(--lightCream);
+  --darkBG: var(--darkGreyBlue);
 }
 
 html,

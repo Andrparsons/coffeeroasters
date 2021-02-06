@@ -1,7 +1,7 @@
 import styles from "./AppLayout.module.css";
 
 import Header from "../Header/Header";
-// import Footer from "../Footer/Footer";
+import Footer from "../Footer/Footer";
 
 const AppLayout = ({ children }) => {
   return (
@@ -9,7 +9,7 @@ const AppLayout = ({ children }) => {
       <div className={styles.container}>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );
