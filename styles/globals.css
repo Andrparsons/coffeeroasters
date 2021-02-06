@@ -1,9 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap");
+:root {
+  /* colours */
+  --darkCyan: #0e8784;
+  --darkGreyBlue: #333d4b;
+  --paleOrange: #fdd6ba;
+  --lightCream: #f3fcf7;
+  --grey: #83888f;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 a {
@@ -13,4 +22,12 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
 }
