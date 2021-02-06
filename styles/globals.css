@@ -10,6 +10,8 @@
   /* intentions */
 
   --appBg: var(--lightCream);
+  --headerLink: var(--grey);
+  --headerLinkHover: var(--darkGreyBlue);
 }
 
 html,

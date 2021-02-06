@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logoLink {
+}
+
+.linkGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.responsiveLinkGroup {
+  display: none;
+}
+
+.pageLink {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-left: 2rem;
+  letter-spacing: 0.92px;
+  text-transform: uppercase;
+  color: var(--headerLink);
+  cursor: pointer;
+}
+
+.pageLink:hover {
+  color: var(--headerLinkHover);
+}
+
+@media (min-width: 450px) {
+  .menuWrapper {
+    display: none;
+  }
+
+  .responsiveLinkGroup {
+    display: initial;
+  }
+}
