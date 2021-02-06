@@ -6,11 +6,12 @@
 }
 
 .logoLink {
+  max-width: 163px;
+  width: 100%;
 }
 
 .linkGroup {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   width: 100%;
 }
@@ -34,12 +35,22 @@
   color: var(--headerLinkHover);
 }
 
-@media (min-width: 450px) {
+@media (min-width: 585px) {
   .menuWrapper {
     display: none;
   }
 
   .responsiveLinkGroup {
     display: initial;
+  }
+}
+
+@media (min-width: 650px) {
+  .logoLink {
+    max-width: 236px;
+  }
+
+  .linkGroup {
+    align-items: center;
   }
 }

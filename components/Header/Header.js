@@ -4,8 +4,8 @@ import { useState } from "react";
 import styles from "./Header.module.css";
 
 // import MobileMenu from "../MobileMenu/MobileMenu";
-// import Logo from "../ImgComponents/shared/desktop/Logo";
-// import Menu from "../ImgComponents/shared/mobile/Menu";
+import { Logo } from "../SvgComponents/shared/desktop";
+import { IconHamburger } from "../SvgComponents/shared/mobile";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -13,7 +13,9 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.linkGroup}>
         <Link href="/">
-          <a className={styles.logoLink}>{/* <Logo /> */} Logo</a>
+          <a className={styles.logoLink}>
+            <Logo width="auto" height="auto" viewBox="0 0 237 27" />
+          </a>
         </Link>
         <div className={styles.responsiveLinkGroup}>
           <Link href="/">
@@ -28,8 +30,8 @@ export default function Header() {
         </div>
       </div>
       <div className={styles.menuWrapper}>
-        {/* <Menu className={styles.hamburger} onClick={() => setOpen(!open)} />
-            <MobileMenu open={open} setOpen={setOpen} /> */}
+        <IconHamburger onClick={() => setOpen(!open)} />
+        {/* <MobileMenu open={open} setOpen={setOpen} /> */}
       </div>
     </header>
   );
