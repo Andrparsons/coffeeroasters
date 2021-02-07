@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
+import Button from '../components/Button/Button';
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -13,13 +15,13 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.intro}>
           <h1>Great coffee made simple.</h1>
-          <p>
+          <p className={styles.introParagraph}>
             Start your mornings with the world’s best coffees. Try our expertly
             curated artisan coffees from our best roasters delivered directly to
             your door, at your schedule.
           </p>
 
-          <button>Create your plan</button>
+          <Button>Create your plan</Button>
         </div>
 
         <div className={styles.collection}>

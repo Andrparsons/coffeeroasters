@@ -1,0 +1,18 @@
+.main {
+  text-align: center;
+}
+
+.intro {
+  margin-top: 2.5rem;
+  border-radius: 0.625rem;
+  padding: 6.25rem 1.5rem;
+  background: url(/home/mobile/image-hero-coffeepress.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--textLight);
+}
+
+.introParagraph {
+  opacity: 0.8;
+  margin: 1.5rem 0 2.5rem;
+}

@@ -2,22 +2,32 @@
 :root {
   /* colours */
   --darkCyan: #0e8784;
+  --seafoamBlue: #66d2cf;
   --darkGreyBlue: #333d4b;
   --paleOrange: #fdd6ba;
   --lightCream: #f3fcf7;
   --grey: #83888f;
+  --shadedWhite: #e2dedb;
 
   /* intentions */
 
   --appBg: var(--lightCream);
+  --darkBG: var(--darkGreyBlue);
+
+  --textDark: var(--darkGreyBlue);
+  --textLight: var(--lightCream);
+
   --headerLink: var(--grey);
   --headerLinkHover: var(--darkGreyBlue);
   --footerLink: var(--grey);
   --footerLinkHover: var(--lightCream);
+
   --iconHover: var(--paleOrange);
-  --textDark: var(--darkGreyBlue);
-  --textLight: var(--lightCream);
-  --darkBG: var(--darkGreyBlue);
+
+  --btnPrimaryBg: var(--darkCyan);
+  --btnPrimaryColour: var(--lightCream);
+  --btnPrimaryBgHover: var(--seafoamBlue);
+  --btnPrimaryDisabled: var(--shadedWhite);
 }
 
 html,
@@ -37,10 +47,21 @@ a {
   box-sizing: border-box;
 }
 
+p {
+  font-size: 0.9375rem;
+  line-height: 1.67;
+}
+
 h1,
 h2,
 h3,
 h4 {
   font-family: "Fraunces", serif;
   font-weight: 900;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin: 0;
 }
