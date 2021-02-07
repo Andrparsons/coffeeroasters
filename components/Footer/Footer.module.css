@@ -2,9 +2,6 @@
   text-align: center;
   background-color: var(--darkBG);
   padding: 3.375rem 0;
-}
-
-.flexFooter {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -78,6 +75,27 @@
   }
 
   .footerIcons {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer {
+    padding: 3rem 5.3125rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .internalLinks {
+    display: flex;
+  }
+
+  .footerLogo {
+    margin: 0;
+    margin-right: 6.5rem;
+  }
+
+  .footerLinks {
     margin: 0;
   }
 }

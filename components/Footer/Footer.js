@@ -12,7 +12,7 @@ import {
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.flexFooter}>
+      <div className={styles.internalLinks}>
         <Link href="/">
           <a>
             <Logo
@@ -34,17 +34,18 @@ export default function Footer() {
             <a className={styles.footerLink}>create your plan</a>
           </Link>
         </div>
-        <div className={styles.footerIcons}>
-          <a className={styles.iconLink} href="https://www.facebook.com">
-            <IconFacebook />
-          </a>
-          <a className={styles.iconLink} href="https://www.twitter.com">
-            <IconTwitter />
-          </a>
-          <a className={styles.iconLink} href="https://www.instagram.com">
-            <IconInstagram />
-          </a>
-        </div>
+      </div>
+
+      <div className={styles.footerIcons}>
+        <a className={styles.iconLink} href="https://www.facebook.com">
+          <IconFacebook />
+        </a>
+        <a className={styles.iconLink} href="https://www.twitter.com">
+          <IconTwitter />
+        </a>
+        <a className={styles.iconLink} href="https://www.instagram.com">
+          <IconInstagram />
+        </a>
       </div>
     </footer>
   );
