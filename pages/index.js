@@ -3,6 +3,12 @@ import styles from "../styles/Home.module.css";
 
 import Button from "../components/Button/Button";
 
+import {
+  IconCoffeeBean,
+  IconGift,
+  IconTruck,
+} from "../components/SvgComponents/home";
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -25,7 +31,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.collectionGroup}>
+        <div className={styles.collectionSection}>
           <h2 className={styles.bigBanner}>Our collection</h2>
           <div className={styles.collections}>
             <div className={styles.collection}>
@@ -83,7 +89,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.features}>
+        <div className={styles.featureGroup}>
           <h2>Why choose us?</h2>
 
           <p>
@@ -93,23 +99,34 @@ export default function Home() {
             level.
           </p>
 
-          <h3>Best quality</h3>
-          <p>
-            Discover an endless variety of the world’s best artisan coffee from
-            each of our roasters.
-          </p>
+          <div className={styles.features}>
+            <div className={styles.feature}>
+              <IconCoffeeBean />
+              <h3>Best quality</h3>
+              <p>
+                Discover an endless variety of the world’s best artisan coffee
+                from each of our roasters.
+              </p>
+            </div>
 
-          <h3>Exclusive benefits</h3>
-          <p>
-            Special offers and swag when you subscribe, including 30% off your
-            first shipment.
-          </p>
+            <div className={styles.feature}>
+              <IconGift />
+              <h3>Exclusive benefits</h3>
+              <p>
+                Special offers and swag when you subscribe, including 30% off
+                your first shipment.
+              </p>
+            </div>
 
-          <h3>Free shipping</h3>
-          <p>
-            We cover the cost and coffee is delivered fast. Peak freshness:
-            guaranteed.
-          </p>
+            <div className={styles.feature}>
+              <IconTruck />
+              <h3>Free shipping</h3>
+              <p>
+                We cover the cost and coffee is delivered fast. Peak freshness:
+                guaranteed.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className={styles.steps}>

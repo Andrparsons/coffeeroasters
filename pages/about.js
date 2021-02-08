@@ -1,6 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/About.module.css";
 
+import {IllustrationUk, IllustrationCanada, IllustrationAustralia} from '../components/SvgComponents/about'
+
 export default function About() {
   return (
     <div className={styles.container}>
@@ -24,6 +26,22 @@ export default function About() {
         </div>
 
         <div className={styles.commitment}>
+          <picture>
+            <source
+              media="(min-width:1100px)"
+              srcSet="/about/desktop/image-commitment.jpg"
+            />
+            <source
+              media="(min-width:450px)"
+              srcSet="/about/tablet/image-commitment.jpg"
+            />
+
+            <img
+              className={styles.commitmentPicture}
+              src="/about/mobile/image-commitment.jpg"
+              alt="Barista"
+            />
+          </picture>
           <h2>Our commitment</h2>
           <p>
             We’re built on a simple mission and a commitment to doing good along
@@ -41,6 +59,22 @@ export default function About() {
         </div>
 
         <div className={styles.quality}>
+          <picture>
+            <source
+              media="(min-width:1100px)"
+              srcSet="/about/desktop/image-quality.jpg"
+            />
+            <source
+              media="(min-width:450px)"
+              srcSet="/about/tablet/image-quality.jpg"
+            />
+
+            <img
+              className={styles.qualityPicture}
+              src="/about/mobile/image-quality.jpg"
+              alt="Great cup of Coffee"
+            />
+          </picture>
           <h2>Uncompromising quality</h2>
           <p>
             Although we work with growers who pay close attention to all stages
@@ -57,15 +91,19 @@ export default function About() {
 
           <div className={styles.locations}>
             <div className={styles.location}>
+              <IllustrationUk />
               <h5>United Kingdom</h5>
               68 Asfordby Rd Alcaston SY6 1YA +44 1241 918425
             </div>
 
             <div className={styles.location}>
+              <IllustrationCanada />
               <h5>Canada</h5>
               1528 Eglinton Avenue Toronto Ontario M4P 1A6 +1 416 485 2997
             </div>
+
             <div className={styles.location}>
+              <IllustrationAustralia />
               <h5>Australia</h5>
               36 Swanston Street Kewell Victoria +61 4 9928 3629
             </div>

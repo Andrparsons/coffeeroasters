@@ -50,3 +50,20 @@
     max-width: 445px;
   }
 }
+
+.quality {
+  background-image: url(/about/mobile/bg-quality.png);
+  color: var(--textLight);
+}
+
+@media (min-width: 550px) {
+  .intro {
+    background-image: url(/about/tablet/bg-quality.png);
+  }
+}
+
+@media (min-width: 900px) {
+  .intro {
+    background-image: url(/about/desktop/bg-quality.png);
+  }
+}
