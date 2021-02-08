@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
         <div className={styles.collectionSection}>
-          <h2 className={styles.bigBanner}>Our collection</h2>
+          <h2 className={styles.bigBanner}>our collection</h2>
           <div className={styles.collections}>
             <div className={styles.collection}>
               <img

@@ -80,7 +80,12 @@
   max-width: 200px;
 }
 
-.collectionContent {
+.collections {
+  display: flex;
+  flex-direction: column;
+}
+
+.collection {
   padding: 0 1.5rem;
 }
 
@@ -90,8 +95,48 @@
 }
 
 @media (min-width: 550px) {
+  .collectionSection {
+    position: relative;
+    margin-top: 9rem;
+  }
+
+  .bigBanner {
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+    line-height: 1;
+    position: relative;
+  }
+
+  .collections {
+    position: relative;
+    max-width: 690px;
+    margin: 0 auto;
+  }
+
+  .collection {
+    display: flex;
+    padding: 0 3.625rem;
+    justify-content: space-between;
+  }
+
+  .collectionContent {
+    max-width: 282px;
+  }
+
+  .coffeeBeanImg {
+    max-width: 255px;
+    align-self: center;
+  }
+}
+
+@media (min-width: 765px) {
   .bigBanner {
     font-size: 6rem;
+  }
+
+  .collections {
+    top: -2.25rem;
   }
 }
 
