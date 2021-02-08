@@ -38,9 +38,10 @@ export default function Home() {
               <img
                 src="/home/desktop/image-gran-espresso.png"
                 alt="gran espresso beans"
+                className={styles.coffeeBeanImg}
               />
               <div className={styles.collectionContent}>
-                <h3>Gran Espresso</h3>
+                <h4 className={styles.collectionTitle}>Gran Espresso</h4>
                 <p>
                   Light and flavorful blend with cocoa and black pepper for an
                   intense experience
@@ -52,9 +53,10 @@ export default function Home() {
               <img
                 src="/home/desktop/image-planalto.png"
                 alt="planalto beans"
+                className={styles.coffeeBeanImg}
               />
               <div className={styles.collectionContent}>
-                <h3>Planalto</h3>
+                <h4 className={styles.collectionTitle}>Planalto</h4>
                 <p>
                   Brazilian dark roast with rich and velvety body, and hints of
                   fruits and nuts
@@ -66,9 +68,10 @@ export default function Home() {
               <img
                 src="/home/desktop/image-piccollo.png"
                 alt="piccollo beans"
+                className={styles.coffeeBeanImg}
               />
               <div className={styles.collectionContent}>
-                <h3>Piccollo</h3>
+                <h4 className={styles.collectionTitle}>Piccollo</h4>
                 <p>
                   Mild and smooth blend featuring notes of toasted almond and
                   dried cherry
@@ -77,9 +80,13 @@ export default function Home() {
             </div>
 
             <div className={styles.collection}>
-              <img src="/home/desktop/image-danche.png" alt="danche beans" />
+              <img
+                src="/home/desktop/image-danche.png"
+                alt="danche beans"
+                className={styles.coffeeBeanImg}
+              />
               <div className={styles.collectionContent}>
-                <h3>Danche</h3>
+                <h4 className={styles.collectionTitle}>Danche</h4>
                 <p>
                   Ethiopian hand-harvested blend densely packed with vibrant
                   fruit notes

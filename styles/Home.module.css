@@ -1,5 +1,6 @@
 .main {
   text-align: center;
+  color: var(--textDark);
 }
 
 @media (min-width: 550px) {
@@ -7,6 +8,8 @@
     text-align: left;
   }
 }
+
+/* intro section */
 
 .intro {
   margin-top: 2.5rem;
@@ -48,5 +51,52 @@
   .introParagraph {
     margin: 2rem 0 3.5rem;
     max-width: 445px;
+  }
+}
+
+/* collection sectio */
+
+.collectionSection {
+  margin-top: 7.5rem;
+}
+
+.collection {
+  margin-top: 3rem;
+}
+
+.collection:first-child {
+  margin-top: 0;
+}
+
+.bigBanner {
+  font-size: 2.5rem;
+  line-height: 1.8;
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.coffeeBeanImg {
+  max-width: 200px;
+}
+
+.collectionContent {
+  padding: 0 1.5rem;
+}
+
+.collectionTitle {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 550px) {
+  .bigBanner {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .bigBanner {
+    font-size: 9.375rem;
   }
 }

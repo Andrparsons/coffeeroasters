@@ -28,6 +28,8 @@
   --btnPrimaryColour: var(--lightCream);
   --btnPrimaryBgHover: var(--seafoamBlue);
   --btnPrimaryDisabled: var(--shadedWhite);
+
+  --gradient: linear-gradient(var(--grey), var(--lightCream));
 }
 
 html,
@@ -68,6 +70,11 @@ h1 {
   font-size: 2.5rem;
   line-height: 1;
   margin: 0;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.33;
 }
 
 @media (min-width: 550px) {
