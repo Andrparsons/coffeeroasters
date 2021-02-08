@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-import Button from '../components/Button/Button';
+import Button from "../components/Button/Button";
 
 export default function Home() {
   return (
@@ -14,14 +14,15 @@ export default function Home() {
 
       <main className={styles.main}>
         <div className={styles.intro}>
-          <h1>Great coffee made simple.</h1>
-          <p className={styles.introParagraph}>
-            Start your mornings with the world’s best coffees. Try our expertly
-            curated artisan coffees from our best roasters delivered directly to
-            your door, at your schedule.
-          </p>
-
-          <Button>Create your plan</Button>
+          <div className={styles.introContainer}>
+            <h1>Great coffee made simple.</h1>
+            <p className={styles.introParagraph}>
+              Start your mornings with the world’s best coffees. Try our
+              expertly curated artisan coffees from our best roasters delivered
+              directly to your door, at your schedule.
+            </p>
+            <Button>Create your plan</Button>
+          </div>
         </div>
 
         <div className={styles.collection}>

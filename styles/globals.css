@@ -65,3 +65,20 @@ h1 {
   line-height: 1;
   margin: 0;
 }
+
+@media (min-width: 550px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 900px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.62;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+}
