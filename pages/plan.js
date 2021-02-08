@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Plan.module.css";
 
 export default function Plan() {
   return (
@@ -12,14 +12,16 @@ export default function Plan() {
 
       <main className={styles.main}>
         <div className={styles.intro}>
-    <h1>
-      Create a plan
-    </h1>
-    <p>
-  Build a subscription plan that best fits your needs. We offer an assortment of the best 
-  artisan coffees from around the globe delivered fresh to your door.
-    </p>
+          <div className={styles.introContainer}>
+            <h1>Create a plan</h1>
+            <p className={styles.introParagraph}>
+              Build a subscription plan that best fits your needs. We offer an assortment of the best 
+              artisan coffees from around the globe delivered fresh to your door.
+            </p>
+          </div>
         </div>
+
+
 <div className={styles.instructions}>
 <div className={styles.step}>
 

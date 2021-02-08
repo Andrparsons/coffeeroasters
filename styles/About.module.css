@@ -12,7 +12,7 @@
   margin-top: 2.5rem;
   border-radius: 0.625rem;
   padding: 6.25rem 1.5rem;
-  background: url(/home/mobile/image-hero-coffeepress.jpg);
+  background: url(/about/mobile/image-hero-whitecup.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--textLight);
@@ -31,14 +31,14 @@
   .intro {
     margin-top: 3.3125rem;
     padding: 6.5rem 3.625rem;
-    background-image: url(/home/tablet/image-hero-coffeepress.jpg);
+    background-image: url(/about/tablet/image-hero-whitecup.jpg);
   }
 }
 
 @media (min-width: 900px) {
   .intro {
     padding: 7.5rem 5.3125rem;
-    background-image: url(/home/desktop/image-hero-coffeepress.jpg);
+    background-image: url(/about/desktop/image-hero-whitecup.jpg);
   }
 
   .introContainer {

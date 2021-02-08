@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/About.module.css";
 
 export default function About() {
   return (
@@ -12,13 +12,15 @@ export default function About() {
 
       <main className={styles.main}>
         <div className={styles.intro}>
-          <h1>About us</h1>
-          <p>
-            Coffeeroasters began its journey of exotic discovery in 1999,
-            highlighting stories of coffee from around the world. We have since
-            been dedicated to bring the perfect cup - from bean to brew - in
-            every shipment.
-          </p>
+          <div className={styles.introContainer}>
+            <h2>About us</h2>
+            <p className={styles.introParagraph}>
+              Coffeeroasters began its journey of exotic discovery in 1999,
+              highlighting stories of coffee from around the world. We have
+              since been dedicated to bring the perfect cup - from bean to brew
+              - in every shipment.
+            </p>
+          </div>
         </div>
 
         <div className={styles.commitment}>
