@@ -96,9 +96,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.featureGroup}>
+        <div className={styles.featureSection}>
           <h2>Why choose us?</h2>
-
           <p>
             A large part of our role is choosing which particular coffees will
             be featured in our range. This means working closely with the best

@@ -13,7 +13,7 @@
 
 .intro {
   margin-top: 2.5rem;
-  border-radius: 0.625rem;
+  border-radius: var(--radiusLarge);
   padding: 6.25rem 1.5rem;
   background: url(/home/mobile/image-hero-coffeepress.jpg);
   background-repeat: no-repeat;
@@ -144,4 +144,17 @@
   .bigBanner {
     font-size: 9.375rem;
   }
+}
+
+/* features */
+
+.featureSection {
+  background-color: var(--darkBG);
+  color: var(--textLight);
+  border-radius: var(--radiusLarge);
+}
+
+.feature {
+  background-color: var(--highlightBG);
+  border-radius: var(--radiusSmall);
 }
