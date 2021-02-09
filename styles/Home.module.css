@@ -9,6 +9,26 @@
   }
 }
 
+/* section spacing */
+.collectionSection,
+.featureSection,
+.stepSection {
+  margin-top: 7.5rem;
+}
+
+.stepSection {
+  margin-bottom: 7.5rem;
+}
+
+@media (min-width: 550px) {
+  .collectionSection,
+  .featureSection,
+  .stepSection {
+    position: relative;
+    margin-top: 9rem;
+  }
+}
+
 /* intro section */
 
 .intro {
@@ -54,11 +74,7 @@
   }
 }
 
-/* collection sectio */
-
-.collectionSection {
-  margin-top: 7.5rem;
-}
+/* collection section */
 
 .collection {
   margin-top: 3rem;
@@ -95,11 +111,6 @@
 }
 
 @media (min-width: 550px) {
-  .collectionSection {
-    position: relative;
-    margin-top: 9rem;
-  }
-
   .bigBanner {
     font-size: 4rem;
     text-align: center;
@@ -158,3 +169,5 @@
   background-color: var(--highlightBG);
   border-radius: var(--radiusSmall);
 }
+
+/* steps */
