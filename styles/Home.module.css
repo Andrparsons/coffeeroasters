@@ -14,6 +14,7 @@
 .featureSection,
 .stepSection {
   margin-top: 7.5rem;
+  position: relative;
 }
 
 .stepSection {
@@ -24,7 +25,6 @@
   .collectionSection,
   .featureSection,
   .stepSection {
-    position: relative;
     margin-top: 9rem;
   }
 }
@@ -160,14 +160,40 @@
 /* features */
 
 .featureSection {
-  background-color: var(--darkBG);
+  padding: 4rem 1.5rem 0;
   color: var(--textLight);
+}
+
+.featureBackground {
   border-radius: var(--radiusLarge);
+  background-color: var(--darkBG);
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 0;
+  left: 0;
+}
+
+.features,
+.featuresIntro {
+  z-index: 1;
+  position: relative;
 }
 
 .feature {
+  padding: 4.5rem 0 3rem;
+  margin-bottom: 1.5rem;
   background-color: var(--highlightBG);
   border-radius: var(--radiusSmall);
+}
+
+.featureContent {
+  margin-top: 3.5rem;
+}
+
+.featureText {
+  padding: 0 2.5rem;
+  margin-top: 1.5rem;
 }
 
 /* steps */

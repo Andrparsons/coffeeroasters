@@ -97,46 +97,55 @@ export default function Home() {
         </div>
 
         <div className={styles.featureSection}>
-          <h2>Why choose us?</h2>
-          <p>
-            A large part of our role is choosing which particular coffees will
-            be featured in our range. This means working closely with the best
-            coffee growers to give you a more impactful experience on every
-            level.
-          </p>
+          <div className={styles.featureBackground} />
+          <div className={styles.featuresIntro}>
+            <h4>Why choose us?</h4>
+            <p>
+              A large part of our role is choosing which particular coffees will
+              be featured in our range. This means working closely with the best
+              coffee growers to give you a more impactful experience on every
+              level.
+            </p>
+          </div>
 
           <div className={styles.features}>
             <div className={styles.feature}>
-              <IconCoffeeBean />
-              <h3>Best quality</h3>
-              <p>
-                Discover an endless variety of the world’s best artisan coffee
-                from each of our roasters.
-              </p>
+              <IconCoffeeBean className={styles.featureImg} />
+              <div className={styles.featureContent}>
+                <h4 className={styles.featureTitle}>Best quality</h4>
+                <p className={styles.featureText}>
+                  Discover an endless variety of the world’s best artisan coffee
+                  from each of our roasters.
+                </p>
+              </div>
             </div>
 
             <div className={styles.feature}>
-              <IconGift />
-              <h3>Exclusive benefits</h3>
-              <p>
-                Special offers and swag when you subscribe, including 30% off
-                your first shipment.
-              </p>
+              <IconGift className={styles.featureImg} />
+              <div className={styles.featureContent}>
+                <h4 className={styles.featureTitle}>Exclusive benefits</h4>
+                <p className={styles.featureText}>
+                  Special offers and swag when you subscribe, including 30% off
+                  your first shipment.
+                </p>
+              </div>
             </div>
 
             <div className={styles.feature}>
-              <IconTruck />
-              <h3>Free shipping</h3>
-              <p>
-                We cover the cost and coffee is delivered fast. Peak freshness:
-                guaranteed.
-              </p>
+              <IconTruck className={styles.featureImg} />
+              <div className={styles.featureContent}>
+                <h4 className={styles.featureTitle}>Free shipping</h4>
+                <p className={styles.featureText}>
+                  We cover the cost and coffee is delivered fast. Peak
+                  freshness: guaranteed.
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
         <div className={styles.stepSection}>
-          <h3>How it works</h3>
+          <h3 className={styles.featureTitle}>How it works</h3>
           <div className={styles.steps}>
             <div className={styles.step}>
               <h4>01</h4>
