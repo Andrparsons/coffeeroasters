@@ -180,11 +180,19 @@
   position: relative;
 }
 
+.featuresIntroTitle {
+  margin-bottom: 2rem;
+}
+
 .feature {
   padding: 4.5rem 0 3rem;
   margin-bottom: 1.5rem;
   background-color: var(--highlightBG);
   border-radius: var(--radiusSmall);
+}
+
+.feature:first-child {
+  margin-top: 4rem;
 }
 
 .featureContent {

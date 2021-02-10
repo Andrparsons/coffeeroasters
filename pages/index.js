@@ -99,7 +99,7 @@ export default function Home() {
         <div className={styles.featureSection}>
           <div className={styles.featureBackground} />
           <div className={styles.featuresIntro}>
-            <h4>Why choose us?</h4>
+            <h2 className={styles.featuresIntroTitle}>Why choose us?</h2>
             <p>
               A large part of our role is choosing which particular coffees will
               be featured in our range. This means working closely with the best
@@ -145,7 +145,7 @@ export default function Home() {
         </div>
 
         <div className={styles.stepSection}>
-          <h3 className={styles.featureTitle}>How it works</h3>
+          <h4>How it works</h4>
           <div className={styles.steps}>
             <div className={styles.step}>
               <h4>01</h4>
