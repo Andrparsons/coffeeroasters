@@ -206,3 +206,31 @@
 }
 
 /* steps */
+
+.stepSectionTitle {
+  color: var(--secondaryTitle);
+}
+
+.steps {
+  margin: 5rem 0;
+}
+
+.step {
+  margin-top: 3.5rem;
+}
+
+.stepNumber {
+  color: var(--titleHighlight);
+  font-weight: 900;
+  font-size: 4.5rem;
+  line-height: 1;
+  font-family: "Fraunces", serif;
+}
+
+.stepTitle {
+  margin-bottom: 1.5rem;
+}
+
+.stepContent {
+  margin-top: 1.5rem;
+}

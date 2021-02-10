@@ -24,6 +24,8 @@
   --footerLinkHover: var(--lightCream);
 
   --iconHover: var(--paleOrange);
+  --titleHighlight: var(--paleOrange);
+  --secondaryTitle: var(--grey);
 
   --btnPrimaryBg: var(--darkCyan);
   --btnPrimaryColour: var(--lightCream);

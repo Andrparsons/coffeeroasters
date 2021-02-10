@@ -145,39 +145,46 @@ export default function Home() {
         </div>
 
         <div className={styles.stepSection}>
-          <h4>How it works</h4>
+          <h4 className={styles.stepSectionTitle}>How it works</h4>
           <div className={styles.steps}>
             <div className={styles.step}>
-              <h4>01</h4>
-              <h5>Pick your coffee</h5>
-              <p>
-                Select from our evolving range of artisan coffees. Our beans are
-                ethically sourced and we pay fair prices for them. There are new
-                coffees in all profiles every month for you to try out.
-              </p>
+              <div className={styles.stepNumber}>01</div>
+              <div className={styles.stepContent}>
+                <h2 className={styles.stepTitle}>Pick your coffee</h2>
+                <p>
+                  Select from our evolving range of artisan coffees. Our beans
+                  are ethically sourced and we pay fair prices for them. There
+                  are new coffees in all profiles every month for you to try
+                  out.
+                </p>
+              </div>
             </div>
 
             <div className={styles.step}>
-              <h4>02</h4>
-              <h5>Choose the frequency</h5>
-              <p>
-                Customize your order frequency, quantity, even your roast style
-                and grind type. Pause, skip or cancel your subscription with no
-                commitment through our online portal.
-              </p>
+              <div className={styles.stepNumber}>02</div>
+              <div className={styles.stepContent}>
+                <h2 className={styles.stepTitle}>Choose the frequency</h2>
+                <p>
+                  Customize your order frequency, quantity, even your roast
+                  style and grind type. Pause, skip or cancel your subscription
+                  with no commitment through our online portal.
+                </p>
+              </div>
             </div>
 
             <div className={styles.step}>
-              <h4>03</h4>
-              <h5>Receive and enjoy!</h5>
-              <p>
-                We ship your package within 48 hours, freshly roasted. Sit back
-                and enjoy award-winning world-class coffees curated to provide a
-                distinct tasting experience.
-              </p>
+              <div className={styles.stepNumber}>03</div>
+              <div className={styles.stepContent}>
+                <h2 className={styles.stepTitle}>Receive and enjoy!</h2>
+                <p>
+                  We ship your package within 48 hours, freshly roasted. Sit
+                  back and enjoy award-winning world-class coffees curated to
+                  provide a distinct tasting experience.
+                </p>
+              </div>
             </div>
-            <Button>Create your plan</Button>
           </div>
+          <Button>Create your plan</Button>
         </div>
       </main>
     </div>
