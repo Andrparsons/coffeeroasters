@@ -33,6 +33,11 @@
   --btnPrimaryDisabled: var(--shadedWhite);
 
   --gradient: linear-gradient(var(--grey), var(--lightCream));
+  /* this is light cream with a .5 aplha */
+  --menuGradient: linear-gradient(
+    var(--lightCream) 40%,
+    rgba(254, 252, 247, 0.5)
+  );
 
   /*border radius */
 

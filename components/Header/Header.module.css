@@ -3,6 +3,12 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  position: sticky;
+  top: 0;
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  background: var(--appBg);
+  z-index: 2;
 }
 
 .logoLink {
@@ -36,7 +42,27 @@
   color: var(--headerLinkHover);
 }
 
+.visible {
+  opacity: 1;
+  height: auto;
+  width: auto;
+  transition: opacity ease-in-out 0.5s;
+}
+
+.notVisible {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  position: absolute;
+}
+
 @media (min-width: 585px) {
+  .header {
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+  }
+
   .menuWrapper {
     display: none;
   }

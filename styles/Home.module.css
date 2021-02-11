@@ -32,7 +32,6 @@
 /* intro section */
 
 .intro {
-  margin-top: 2.5rem;
   border-radius: var(--radiusLarge);
   padding: 6.25rem 1.5rem;
   background: url(/home/mobile/image-hero-coffeepress.jpg);
@@ -50,7 +49,7 @@
   margin: 1.5rem 0 2.5rem;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 585px) {
   .intro {
     margin-top: 3.3125rem;
     padding: 6.5rem 3.625rem;

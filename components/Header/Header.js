@@ -3,9 +3,9 @@ import { useState } from "react";
 
 import styles from "./Header.module.css";
 
-// import MobileMenu from "../MobileMenu/MobileMenu";
+import MobileMenu from "../MobileMenu/MobileMenu";
 import { Logo } from "../SvgComponents/shared/desktop";
-import { IconHamburger } from "../SvgComponents/shared/mobile";
+import { IconHamburger, IconClose } from "../SvgComponents/shared/mobile";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -30,8 +30,13 @@ export default function Header() {
         </div>
       </div>
       <div className={styles.menuWrapper}>
-        <IconHamburger onClick={() => setOpen(!open)} />
-        {/* <MobileMenu open={open} setOpen={setOpen} /> */}
+        <div className={styles.MenuIcon} onClick={() => setOpen(!open)}>
+          <IconHamburger
+            className={open ? styles.notVisible : styles.visible}
+          />
+          <IconClose className={open ? styles.visible : styles.notVisible} />
+        </div>
+        <MobileMenu open={open} setOpen={setOpen} />
       </div>
     </header>
   );

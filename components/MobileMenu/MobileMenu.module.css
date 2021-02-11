@@ -1,0 +1,29 @@
+.mobileMenu {
+  background: var(--menuGradient);
+  height: 100vh;
+  right: 0;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  /* transform: translateX(100%); */
+  position: fixed;
+  z-index: 10;
+}
+
+.mobileLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.mobileLink {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--textDark);
+  margin-top: 2rem;
+}
+
+.mobileLink:first-child {
+  margin-top: 0;
+}
