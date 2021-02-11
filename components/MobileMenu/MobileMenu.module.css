@@ -4,9 +4,9 @@
   right: 0;
   transition: transform 0.3s ease-in-out;
   width: 100%;
-  /* transform: translateX(100%); */
   position: fixed;
   z-index: 10;
+  top: 5.85rem;
 }
 
 .mobileLinks {
