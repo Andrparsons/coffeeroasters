@@ -128,6 +128,7 @@
     display: flex;
     padding: 0 3.625rem;
     justify-content: space-between;
+    margin-top: 2rem;
   }
 
   .collectionContent {
@@ -135,7 +136,7 @@
   }
 
   .coffeeBeanImg {
-    max-width: 255px;
+    width: 255px;
     align-self: center;
   }
 }
@@ -147,10 +148,22 @@
 
   .collections {
     top: -2.25rem;
+    margin-bottom: -2.25rem;
   }
 }
 
 @media (min-width: 900px) {
+  .bigBanner {
+    font-size: 7rem;
+  }
+
+  .collections {
+    top: -2.75rem;
+    margin-bottom: -2.75rem;
+  }
+}
+
+@media (min-width: 1150px) {
   .bigBanner {
     font-size: 9.375rem;
   }
@@ -250,6 +263,9 @@
     padding: 0;
     margin-top: 1rem;
   }
+}
+
+@media (min-width: 900px) {
 }
 
 /* steps */
