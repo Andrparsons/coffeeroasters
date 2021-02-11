@@ -161,6 +161,7 @@
 .featureSection {
   padding: 4rem 1.5rem 0;
   color: var(--textLight);
+  text-align: center;
 }
 
 .featureBackground {
@@ -183,6 +184,10 @@
   margin-bottom: 2rem;
 }
 
+.features {
+  margin-top: 4rem;
+}
+
 .feature {
   padding: 4.5rem 0 3rem;
   margin-bottom: 1.5rem;
@@ -190,8 +195,10 @@
   border-radius: var(--radiusSmall);
 }
 
-.feature:first-child {
-  margin-top: 4rem;
+.featureImgContainer {
+  max-width: 72px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .featureContent {
@@ -202,6 +209,47 @@
   padding: 0 2.5rem;
   margin-top: 1.5rem;
   margin-bottom: 0;
+}
+
+@media (min-width: 650px) {
+  .featureBackground {
+    height: 66%;
+  }
+  .featureSection {
+    padding: 3.5rem 3.625rem 0;
+    text-align: left;
+  }
+
+  .featuresIntro {
+    text-align: center;
+    max-width: 495px;
+    margin: 0 auto;
+  }
+
+  .features {
+    margin-top: 4.375rem;
+  }
+
+  .feature {
+    padding: 2.5rem 3rem 2.5rem 4.375rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .featureContent {
+    margin-top: 0;
+    margin-left: 3.5rem;
+  }
+
+  .featureImgContainer {
+    max-width: 56px;
+    margin: 0;
+  }
+
+  .featureText {
+    padding: 0;
+    margin-top: 1rem;
+  }
 }
 
 /* steps */

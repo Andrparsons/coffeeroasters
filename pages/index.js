@@ -110,7 +110,14 @@ export default function Home() {
 
           <div className={styles.features}>
             <div className={styles.feature}>
-              <IconCoffeeBean className={styles.featureImg} />
+              <div className={styles.featureImgContainer}>
+                <IconCoffeeBean
+                  className={styles.featureImg}
+                  width="auto"
+                  height="auto"
+                  viewBox="0 0 73 72"
+                />
+              </div>
               <div className={styles.featureContent}>
                 <h4 className={styles.featureTitle}>Best quality</h4>
                 <p className={styles.featureText}>
@@ -121,7 +128,14 @@ export default function Home() {
             </div>
 
             <div className={styles.feature}>
-              <IconGift className={styles.featureImg} />
+              <div className={styles.featureImgContainer}>
+                <IconGift
+                  className={styles.featureImg}
+                  width="auto"
+                  height="auto"
+                  viewBox="0 0 72 72"
+                />
+              </div>
               <div className={styles.featureContent}>
                 <h4 className={styles.featureTitle}>Exclusive benefits</h4>
                 <p className={styles.featureText}>
@@ -132,7 +146,14 @@ export default function Home() {
             </div>
 
             <div className={styles.feature}>
-              <IconTruck className={styles.featureImg} />
+              <div className={styles.featureImgContainer}>
+                <IconTruck
+                  className={styles.featureImg}
+                  width="auto"
+                  height="auto"
+                  viewBox="0 0 72 50"
+                />
+              </div>
               <div className={styles.featureContent}>
                 <h4 className={styles.featureTitle}>Free shipping</h4>
                 <p className={styles.featureText}>
