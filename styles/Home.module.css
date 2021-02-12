@@ -29,6 +29,14 @@
   }
 }
 
+@media (min-width: 900px) {
+  .collectionSection,
+  .featureSection,
+  .stepSection {
+    margin-top: 12.5rem;
+  }
+}
+
 /* intro section */
 
 .intro {
@@ -365,4 +373,10 @@
 
 .stepContent {
   margin-top: 1.5rem;
+}
+
+@media (min-width: 550px) {
+  .main {
+    text-align: left;
+  }
 }
