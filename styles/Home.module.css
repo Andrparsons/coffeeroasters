@@ -253,6 +253,7 @@
   .featureBackground {
     height: 66%;
   }
+
   .featureSection {
     padding: 3.5rem 3.625rem 0;
     text-align: left;
@@ -291,6 +292,49 @@
 }
 
 @media (min-width: 900px) {
+  .featureBackground {
+    height: 80%;
+  }
+
+  .featuresIntro {
+    max-width: 535px;
+  }
+
+  .features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5.375rem;
+  }
+
+  .feature {
+    flex-direction: column;
+    margin: 0;
+    padding: 4.5rem 3rem 3rem 3rem;
+    text-align: center;
+    max-width: 350px;
+
+    margin-right: 1rem;
+  }
+
+  .feature:last-child {
+    margin-right: 0;
+    justify-content: space-between;
+  }
+
+  .featureImgContainer {
+    max-width: 72px;
+  }
+
+  .featureContent {
+    margin: 0;
+    margin-top: 3.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .featureSection {
+    padding: 6.25rem 5.3125rem 0;
+  }
 }
 
 /* steps */
