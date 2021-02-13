@@ -169,9 +169,10 @@ export default function Home() {
           <h4 className={styles.stepSectionTitle}>How it works</h4>
           <div className={styles.steps}>
             <div className={styles.step}>
+              <div className={styles.circle} />
               <div className={styles.stepNumber}>01</div>
               <div className={styles.stepContent}>
-                <h2 className={styles.stepTitle}>Pick your coffee</h2>
+                <h3 className={styles.stepTitle}>Pick your coffee</h3>
                 <p>
                   Select from our evolving range of artisan coffees. Our beans
                   are ethically sourced and we pay fair prices for them. There
@@ -182,9 +183,10 @@ export default function Home() {
             </div>
 
             <div className={styles.step}>
+              <div className={styles.circle} />
               <div className={styles.stepNumber}>02</div>
               <div className={styles.stepContent}>
-                <h2 className={styles.stepTitle}>Choose the frequency</h2>
+                <h3 className={styles.stepTitle}>Choose the frequency</h3>
                 <p>
                   Customize your order frequency, quantity, even your roast
                   style and grind type. Pause, skip or cancel your subscription
@@ -194,9 +196,11 @@ export default function Home() {
             </div>
 
             <div className={styles.step}>
+              <div className={styles.circle} />
+              <div className={styles.borderCover} />
               <div className={styles.stepNumber}>03</div>
               <div className={styles.stepContent}>
-                <h2 className={styles.stepTitle}>Receive and enjoy!</h2>
+                <h3 className={styles.stepTitle}>Receive and enjoy!</h3>
                 <p>
                   We ship your package within 48 hours, freshly roasted. Sit
                   back and enjoy award-winning world-class coffees curated to
