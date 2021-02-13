@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.intro}>
+        <section className={styles.intro}>
           <div className={styles.introContainer}>
             <h1>Great coffee made simple.</h1>
             <p className={styles.introParagraph}>
@@ -34,9 +34,9 @@ export default function Home() {
               </a>
             </Link>
           </div>
-        </div>
+        </section>
 
-        <div className={styles.collectionSection}>
+        <section className={styles.collectionSection}>
           <h2 className={styles.bigBanner}>our collection</h2>
           <div className={styles.collections}>
             <div className={styles.collection}>
@@ -99,9 +99,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className={styles.featureSection}>
+        <section className={styles.featureSection}>
           <div className={styles.featureBackground} />
           <div className={styles.featuresIntro}>
             <h2 className={styles.featuresIntroTitle}>Why choose us?</h2>
@@ -168,9 +168,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div className={styles.stepSection}>
+        <section className={styles.stepSection}>
           <h4 className={styles.stepSectionTitle}>How it works</h4>
           <div className={styles.steps}>
             <div className={styles.step}>
@@ -219,7 +219,7 @@ export default function Home() {
               <Button>Create your plan</Button>
             </a>
           </Link>
-        </div>
+        </section>
       </main>
     </div>
   );

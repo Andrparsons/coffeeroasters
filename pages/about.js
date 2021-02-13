@@ -1,7 +1,11 @@
 import Head from "next/head";
 import styles from "../styles/About.module.css";
 
-import {IllustrationUk, IllustrationCanada, IllustrationAustralia} from '../components/SvgComponents/about'
+import {
+  IllustrationUk,
+  IllustrationCanada,
+  IllustrationAustralia,
+} from "../components/SvgComponents/about";
 
 export default function About() {
   return (
@@ -13,7 +17,7 @@ export default function About() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.intro}>
+        <section className={styles.intro}>
           <div className={styles.introContainer}>
             <h2>About us</h2>
             <p className={styles.introParagraph}>
@@ -23,9 +27,9 @@ export default function About() {
               - in every shipment.
             </p>
           </div>
-        </div>
+        </section>
 
-        <div className={styles.commitment}>
+        <section className={styles.commitmentSection}>
           <picture>
             <source
               media="(min-width:1100px)"
@@ -56,9 +60,9 @@ export default function About() {
             only the finest blends, we roast each lot to highlight tasting
             profiles distinctive to their native growing region.
           </p>
-        </div>
+        </section>
 
-        <div className={styles.quality}>
+        <section className={styles.qualitySection}>
           <picture>
             <source
               media="(min-width:1100px)"
@@ -84,9 +88,9 @@ export default function About() {
             Our goal is to roast consistent, user-friendly coffee, so that
             brewing is easy and enjoyable.
           </p>
-        </div>
+        </section>
 
-        <div className={styles.headquarters}>
+        <section className={styles.locationSection}>
           <h4>Our headquarters</h4>
 
           <div className={styles.locations}>
@@ -108,7 +112,7 @@ export default function About() {
               36 Swanston Street Kewell Victoria +61 4 9928 3629
             </div>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   );
