@@ -53,6 +53,7 @@
   background: url(/home/mobile/image-hero-coffeepress.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top right;
   color: var(--textLight);
 }
 

@@ -9,12 +9,12 @@
 }
 
 .intro {
-  margin-top: 2.5rem;
-  border-radius: 0.625rem;
-  padding: 6.25rem 1.5rem;
+  border-radius: var(--radiusLarge);
+  padding: 6.875rem 1.5rem 5.5rem 1.5rem;
   background: url(/about/mobile/image-hero-whitecup.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top right;
   color: var(--textLight);
 }
 
@@ -24,10 +24,10 @@
 
 .introParagraph {
   opacity: 0.8;
-  margin: 1.5rem 0 2.5rem;
+  margin: 1.5rem 0 0;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 500px) {
   .intro {
     margin-top: 3.3125rem;
     padding: 6.5rem 3.625rem;
@@ -57,13 +57,13 @@
 }
 
 @media (min-width: 550px) {
-  .intro {
+  .quality {
     background-image: url(/about/tablet/bg-quality.png);
   }
 }
 
 @media (min-width: 900px) {
-  .intro {
+  .quality {
     background-image: url(/about/desktop/bg-quality.png);
   }
 }
