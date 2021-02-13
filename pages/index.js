@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Link from "next/link";
 
 import Button from "../components/Button/Button";
 
@@ -27,7 +28,11 @@ export default function Home() {
               expertly curated artisan coffees from our best roasters delivered
               directly to your door, at your schedule.
             </p>
-            <Button>Create your plan</Button>
+            <Link href="/plan" passHref>
+              <a>
+                <Button>Create your plan</Button>
+              </a>
+            </Link>
           </div>
         </div>
 
@@ -209,7 +214,11 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <Button>Create your plan</Button>
+          <Link href="/plan" passHref>
+            <a>
+              <Button>Create your plan</Button>
+            </a>
+          </Link>
         </div>
       </main>
     </div>
