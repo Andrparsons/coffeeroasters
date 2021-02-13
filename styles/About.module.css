@@ -10,6 +10,40 @@
 
 /* section spacing */
 
+.commitmentSection,
+.qualitySection,
+.locationSection {
+  margin-top: 7.5rem;
+}
+
+.locationSection {
+  margin-bottom: 7.5rem;
+}
+
+@media (min-width: 550px) {
+  .commitmentSection,
+  .qualitySection,
+  .locationSection {
+    margin-top: 9rem;
+  }
+
+  .locationSection {
+    margin-bottom: 9rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .commitmentSection,
+  .qualitySection,
+  .locationSection {
+    margin-top: 10.5rem;
+  }
+
+  .locationSection {
+    margin-bottom: 10.5rem;
+  }
+}
+
 /* intro section */
 
 .intro {
@@ -34,7 +68,7 @@
 @media (min-width: 500px) {
   .intro {
     margin-top: 3.3125rem;
-    padding: 6.5rem 3.625rem;
+    padding: 7.375rem 3.625rem;
     background-image: url(/about/tablet/image-hero-whitecup.jpg);
   }
 }
@@ -55,19 +89,57 @@
   }
 }
 
-.quality {
+/* commitment section */
+
+.commitmentSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.commitmentImage {
+  border-radius: var(--radiusSmall);
+  max-width: 327px;
+}
+
+.commitmentContent {
+  max-width: 540px;
+  margin: 3rem auto 0;
+}
+
+@media (min-width: 750px) {
+  .commitmentSection {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .commitmentImage {
+    min-width: 281px;
+  }
+
+  .commitmentContent {
+    margin-top: 0;
+    margin-left: 4.375rem;
+  }
+}
+
+/* quality section */
+
+.qualitySection {
   background-image: url(/about/mobile/bg-quality.png);
   color: var(--textLight);
 }
 
 @media (min-width: 550px) {
-  .quality {
+  .qualitySection {
     background-image: url(/about/tablet/bg-quality.png);
   }
 }
 
 @media (min-width: 900px) {
-  .quality {
+  .qualitySection {
     background-image: url(/about/desktop/bg-quality.png);
   }
 }
