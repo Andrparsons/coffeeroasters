@@ -107,6 +107,10 @@
   margin: 3rem auto 0;
 }
 
+.commitmentTitle {
+  margin-bottom: 1.875rem;
+}
+
 @media (min-width: 750px) {
   .commitmentSection {
     text-align: left;
@@ -130,6 +134,25 @@
 .qualitySection {
   background-image: url(/about/mobile/bg-quality.png);
   color: var(--textLight);
+  border-radius: var(--radiusLarge);
+}
+
+.qualitySectionContainer {
+  padding: 0 2rem 3.75rem;
+}
+
+.qualityImage {
+  border-radius: var(--radiusSmall);
+  position: relative;
+  top: -4.875rem;
+}
+
+.qualityContent {
+  margin-top: -0.875rem;
+}
+
+.qualityTitle {
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 550px) {

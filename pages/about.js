@@ -66,31 +66,35 @@ export default function About() {
         </section>
 
         <section className={styles.qualitySection}>
-          <picture>
-            <source
-              media="(min-width:1100px)"
-              srcSet="/about/desktop/image-quality.jpg"
-            />
-            <source
-              media="(min-width:450px)"
-              srcSet="/about/tablet/image-quality.jpg"
-            />
+          <div className={styles.qualitySectionContainer}>
+            <picture>
+              <source
+                media="(min-width:1100px)"
+                srcSet="/about/desktop/image-quality.jpg"
+              />
+              <source
+                media="(min-width:450px)"
+                srcSet="/about/tablet/image-quality.jpg"
+              />
 
-            <img
-              className={styles.qualityPicture}
-              src="/about/mobile/image-quality.jpg"
-              alt="Great cup of Coffee"
-            />
-          </picture>
-          <h2>Uncompromising quality</h2>
-          <p>
-            Although we work with growers who pay close attention to all stages
-            of harvest and processing, we employ, on our end, a rigorous quality
-            control program to avoid over-roasting or baking the coffee dry.
-            Every bag of coffee is tagged with a roast date and batch number.
-            Our goal is to roast consistent, user-friendly coffee, so that
-            brewing is easy and enjoyable.
-          </p>
+              <img
+                className={styles.qualityImage}
+                src="/about/mobile/image-quality.jpg"
+                alt="Great cup of Coffee"
+              />
+            </picture>
+            <div className={styles.qualityContent}>
+              <h2 className={styles.qualityTitle}>Uncompromising quality</h2>
+              <p>
+                Although we work with growers who pay close attention to all
+                stages of harvest and processing, we employ, on our end, a
+                rigorous quality control program to avoid over-roasting or
+                baking the coffee dry. Every bag of coffee is tagged with a
+                roast date and batch number. Our goal is to roast consistent,
+                user-friendly coffee, so that brewing is easy and enjoyable.
+              </p>
+            </div>
+          </div>
         </section>
 
         <section className={styles.locationSection}>
