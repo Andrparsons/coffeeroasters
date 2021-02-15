@@ -155,6 +155,10 @@
   margin-bottom: 1.5rem;
 }
 
+.qualityText {
+  opacity: 0.5;
+}
+
 @media (min-width: 550px) {
   .qualitySection {
     background-image: url(/about/tablet/bg-quality.png);
@@ -165,4 +169,36 @@
   .qualitySection {
     background-image: url(/about/desktop/bg-quality.png);
   }
+}
+
+/* location section */
+
+.locationSectionTitle {
+  color: var(--secondaryTitle);
+}
+
+.locations {
+  margin-top: 4.5rem;
+}
+
+.location {
+  margin-top: 5rem;
+}
+
+.location:first-child {
+  margin-top: 0;
+}
+
+.locationCountry {
+  margin-top: 3rem;
+}
+
+.addressGroup {
+  margin-top: 1.375rem;
+}
+
+.addressLine {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.62;
 }

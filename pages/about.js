@@ -85,7 +85,7 @@ export default function About() {
             </picture>
             <div className={styles.qualityContent}>
               <h2 className={styles.qualityTitle}>Uncompromising quality</h2>
-              <p>
+              <p className={styles.qualityText}>
                 Although we work with growers who pay close attention to all
                 stages of harvest and processing, we employ, on our end, a
                 rigorous quality control program to avoid over-roasting or
@@ -98,25 +98,40 @@ export default function About() {
         </section>
 
         <section className={styles.locationSection}>
-          <h4>Our headquarters</h4>
+          <h4 className={styles.locationSectionTitle}>Our headquarters</h4>
 
           <div className={styles.locations}>
             <div className={styles.location}>
               <IllustrationUk />
-              <h5>United Kingdom</h5>
-              68 Asfordby Rd Alcaston SY6 1YA +44 1241 918425
+              <h3 className={styles.locationCountry}>United Kingdom</h3>
+              <div className={styles.addressGroup}>
+                <p className={styles.addressLine}>68 Asfordby Rd</p>
+                <p className={styles.addressLine}>Alcaston</p>
+                <p className={styles.addressLine}>SY6 1YA</p>
+                <p className={styles.addressLine}>+44 1241 918425</p>
+              </div>
             </div>
 
             <div className={styles.location}>
               <IllustrationCanada />
-              <h5>Canada</h5>
-              1528 Eglinton Avenue Toronto Ontario M4P 1A6 +1 416 485 2997
+              <h3 className={styles.locationCountry}>Canada</h3>
+              <div className={styles.addressGroup}>
+                <p className={styles.addressLine}>1528 Eglinton Avenue</p>
+                <p className={styles.addressLine}>Toronto</p>
+                <p className={styles.addressLine}>Ontario M4P 1A6</p>
+                <p className={styles.addressLine}>+1 416 485 2997</p>
+              </div>
             </div>
 
             <div className={styles.location}>
               <IllustrationAustralia />
-              <h5>Australia</h5>
-              36 Swanston Street Kewell Victoria +61 4 9928 3629
+              <h3 className={styles.locationCountry}>Australia</h3>
+              <div className={styles.addressGroup}>
+                <p className={styles.addressLine}>36 Swanston Street</p>
+                <p className={styles.addressLine}>Kewell</p>
+                <p className={styles.addressLine}>Victoria</p>
+                <p className={styles.addressLine}>+61 4 9928 3629</p>
+              </div>
             </div>
           </div>
         </section>
