@@ -66,6 +66,7 @@ export default function About() {
         </section>
 
         <section className={styles.qualitySection}>
+          <div className={styles.qualityBackground} />
           <div className={styles.qualitySectionContainer}>
             <picture>
               <source

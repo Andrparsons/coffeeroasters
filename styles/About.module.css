@@ -132,23 +132,35 @@
 /* quality section */
 
 .qualitySection {
-  background-image: url(/about/mobile/bg-quality.png);
   color: var(--textLight);
+  position: relative;
+}
+
+.qualityBackground {
+  background-image: url(/about/mobile/bg-quality.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: var(--radiusLarge);
+  height: 86%;
+  width: 100%;
+  position: absolute;
+  top: 4.875rem;
+  left: 0;
 }
 
 .qualitySectionContainer {
   padding: 0 2rem 3.75rem;
+  z-index: 1;
+  position: relative;
 }
 
 .qualityImage {
   border-radius: var(--radiusSmall);
   position: relative;
-  top: -4.875rem;
 }
 
 .qualityContent {
-  margin-top: -0.875rem;
+  margin-top: 4rem;
 }
 
 .qualityTitle {
@@ -157,16 +169,25 @@
 
 .qualityText {
   opacity: 0.5;
+  margin: 0;
 }
 
 @media (min-width: 550px) {
   .qualitySection {
+    text-align: center;
+  }
+
+  .qualityBackground {
     background-image: url(/about/tablet/bg-quality.png);
+  }
+
+  .qualitySectionContainer {
+    padding: 0 3.625rem 4.25rem;
   }
 }
 
 @media (min-width: 900px) {
-  .qualitySection {
+  .qualityBackground {
     background-image: url(/about/desktop/bg-quality.png);
   }
 }
