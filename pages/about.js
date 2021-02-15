@@ -70,7 +70,7 @@ export default function About() {
           <div className={styles.qualitySectionContainer}>
             <picture>
               <source
-                media="(min-width:1100px)"
+                media="(min-width:1150px)"
                 srcSet="/about/desktop/image-quality.jpg"
               />
               <source

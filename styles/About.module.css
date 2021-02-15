@@ -188,11 +188,45 @@
     max-width: 535px;
     margin: 0 auto;
   }
+
+  .qualityImage {
+    max-width: 573px;
+  }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1150px) {
+  .qualitySection {
+    text-align: left;
+  }
+
   .qualityBackground {
     background-image: url(/about/desktop/bg-quality.png);
+    top: 5.5rem;
+    height: 85%;
+  }
+
+  .qualitySectionContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 0 5.3125rem 5.5rem;
+  }
+
+  .qualityContent {
+    margin-top: 11rem;
+    margin-right: 1rem;
+  }
+
+  .qualityTitle {
+    margin-bottom: 2rem;
+  }
+
+  .qualityText {
+    max-width: 540px;
+  }
+
+  .qualityImage {
+    width: 445px;
   }
 }
 
