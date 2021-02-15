@@ -74,7 +74,7 @@ export default function About() {
                 srcSet="/about/desktop/image-quality.jpg"
               />
               <source
-                media="(min-width:450px)"
+                media="(min-width:550px)"
                 srcSet="/about/tablet/image-quality.jpg"
               />
 

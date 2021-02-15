@@ -134,6 +134,7 @@
 .qualitySection {
   color: var(--textLight);
   position: relative;
+  text-align: center;
 }
 
 .qualityBackground {
@@ -172,17 +173,20 @@
   margin: 0;
 }
 
-@media (min-width: 550px) {
-  .qualitySection {
-    text-align: center;
-  }
-
+@media (min-width: 650px) {
   .qualityBackground {
     background-image: url(/about/tablet/bg-quality.png);
+    top: 10rem;
+    height: 75%;
   }
 
   .qualitySectionContainer {
     padding: 0 3.625rem 4.25rem;
+  }
+
+  .qualityText {
+    max-width: 535px;
+    margin: 0 auto;
   }
 }
 
