@@ -232,6 +232,12 @@
 
 /* location section */
 
+.locationSection {
+  max-width: 1045px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .locationSectionTitle {
   color: var(--secondaryTitle);
 }
@@ -250,6 +256,8 @@
 
 .locationCountry {
   margin-top: 3rem;
+  font-size: 1.75rem;
+  line-height: 1.29;
 }
 
 .addressGroup {
@@ -260,4 +268,38 @@
   margin: 0;
   font-size: 1rem;
   line-height: 1.62;
+}
+
+@media (min-width: 550px) {
+  .locations {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .location {
+    margin-top: 0;
+    flex: 1 1 0px;
+    margin-right: 0.5rem;
+    max-width: 240px;
+  }
+
+  .location:last-child {
+    margin-right: 0;
+  }
+
+  .locationCountry {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 900px) {
+  .locationCountry {
+    font-size: 2rem;
+    line-height: 1.12;
+  }
+
+  .location {
+    max-width: 272px;
+  }
 }
