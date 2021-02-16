@@ -24,14 +24,13 @@ export default function Plan() {
         </section>
 
         <section className={styles.stepSection}>
-          <h4 className={styles.stepSectionTitle}>How it works</h4>
           <div className={styles.steps}>
             <div className={styles.step}>
               <div className={styles.circle} />
               <div className={styles.stepNumber}>01</div>
               <div className={styles.stepContent}>
                 <h3 className={styles.stepTitle}>Pick your coffee</h3>
-                <p>
+                <p className={styles.stepText}>
                   Select from our evolving range of artisan coffees. Our beans
                   are ethically sourced and we pay fair prices for them. There
                   are new coffees in all profiles every month for you to try
@@ -45,7 +44,7 @@ export default function Plan() {
               <div className={styles.stepNumber}>02</div>
               <div className={styles.stepContent}>
                 <h3 className={styles.stepTitle}>Choose the frequency</h3>
-                <p>
+                <p className={styles.stepText}>
                   Customize your order frequency, quantity, even your roast
                   style and grind type. Pause, skip or cancel your subscription
                   with no commitment through our online portal.
@@ -59,7 +58,7 @@ export default function Plan() {
               <div className={styles.stepNumber}>03</div>
               <div className={styles.stepContent}>
                 <h3 className={styles.stepTitle}>Receive and enjoy!</h3>
-                <p>
+                <p className={styles.stepText}>
                   We ship your package within 48 hours, freshly roasted. Sit
                   back and enjoy award-winning world-class coffees curated to
                   provide a distinct tasting experience.

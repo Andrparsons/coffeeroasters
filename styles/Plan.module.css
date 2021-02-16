@@ -8,6 +8,24 @@
   }
 }
 
+/* section spacing */
+
+.stepSection {
+  margin-top: 7.5rem;
+}
+
+@media (min-width: 550px) {
+  .stepSection {
+    margin-top: 9rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .stepSection {
+    margin-top: 12.5rem;
+  }
+}
+
 /* intro section */
 
 .intro {
@@ -56,16 +74,30 @@
 
 /* steps */
 
+.stepSection {
+  background-image: url(/plan/mobile/bg-steps.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: var(--radiusLarge);
+  color: var(--lightCream);
+  padding: 5rem 1.5rem;
+}
+
 .stepSectionTitle {
   color: var(--secondaryTitle);
 }
 
-.steps {
-  margin: 5rem 0;
-}
-
 .step {
   margin-top: 3.5rem;
+}
+
+.step:first-child {
+  margin-top: 0;
+}
+
+.stepText {
+  margin: 0;
 }
 
 .stepNumber {
