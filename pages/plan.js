@@ -25,6 +25,7 @@ export default function Plan() {
 
         <section className={styles.stepSection}>
           <div className={styles.steps}>
+            <hr className={styles.stepBorder} />
             <div className={styles.step}>
               <div className={styles.circle} />
               <div className={styles.stepNumber}>01</div>

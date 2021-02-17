@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: calc(100% + 3rem);
   position: sticky;
   top: 0;
-  padding-top: 2rem;
-  padding-bottom: 2.5rem;
+  padding: 2rem 1.5rem 2.5rem 1.5rem;
+  margin-left: -1.5rem;
   background: var(--appBg);
   z-index: 2;
 }
@@ -58,9 +58,11 @@
 
 @media (min-width: 585px) {
   .header {
-    padding-top: 0;
-    padding-bottom: 0;
+    margin: 0;
+    padding: 0;
     position: relative;
+    margin: 0;
+    width: 100%;
   }
 
   .menuWrapper {
