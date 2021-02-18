@@ -218,3 +218,13 @@
     width: calc(66% + 5.25rem);
   }
 }
+
+/* options section */
+
+.optionSection {
+  display: flex;
+}
+
+.optionStatus {
+  display: none;
+}
