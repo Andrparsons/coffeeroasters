@@ -55,7 +55,6 @@ export default function Plan() {
 
             <div className={styles.step}>
               <div className={styles.circle} />
-              <div className={styles.borderCover} />
               <div className={styles.stepNumber}>03</div>
               <div className={styles.stepContent}>
                 <h3 className={styles.stepTitle}>Receive and enjoy!</h3>
