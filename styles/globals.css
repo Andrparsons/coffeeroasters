@@ -41,6 +41,8 @@
   --circleBorder: var(--darkCyan);
   --stepBorder: var(--paleOrange);
 
+  --accordionButton: var(--grey);
+
   /*border radius */
 
   --radiusLarge: 0.625rem;

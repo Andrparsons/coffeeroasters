@@ -10,18 +10,21 @@
 
 /* section spacing */
 
-.stepSection {
+.stepSection,
+.optionSection {
   margin-top: 7.5rem;
 }
 
 @media (min-width: 550px) {
-  .stepSection {
+  .stepSection,
+  .optionSection {
     margin-top: 9rem;
   }
 }
 
 @media (min-width: 900px) {
-  .stepSection {
+  .stepSection,
+  .optionSection {
     margin-top: 12.5rem;
   }
 }

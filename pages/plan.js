@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Plan.module.css";
 import Button from "../components/Button/Button";
+import Accordion from "../components/Accordion/Accordion";
 
 export default function Plan() {
   return (
@@ -76,37 +77,48 @@ export default function Plan() {
 
           <div className={styles.options}>
             <div className={styles.option}>
-              How do you drink your coffee? Capsule Compatible with Nespresso
-              systems and similar brewers Filter For pour over or drip methods
-              like Aeropress, Chemex, and V60 Espresso Dense and finely ground
-              beans for an intense, flavorful experience
+              <Accordion title="How do you drink your coffee?">
+                Capsule Compatible with Nespresso systems and similar brewers
+                Filter For pour over or drip methods like Aeropress, Chemex, and
+                V60 Espresso Dense and finely ground beans for an intense,
+                flavorful experience
+              </Accordion>
             </div>
 
             <div className={styles.option}>
-              What type of coffee? Single origin Distinct, high quality coffee
-              from a specific family-owned farm Decaf Just like regular coffee,
-              except the caffeine has been removed Blended Combination of two or
-              three dark roasted beans of organic coffees
+              <Accordion title="What type of coffee?">
+                Single origin Distinct, high quality coffee from a specific
+                family-owned farm Decaf Just like regular coffee, except the
+                caffeine has been removed Blended Combination of two or three
+                dark roasted beans of organic coffees
+              </Accordion>
             </div>
 
             <div className={styles.option}>
-              How much would you like? 250g Perfect for the solo drinker. Yields
-              about 12 delicious cups. 500g Perfect option for a couple. Yields
-              about 40 delectable cups. 1000g Perfect for offices and events.
-              Yields about 90 delightful cups.
-            </div>
-            <div className={styles.option}>
-              Want us to grind them? Wholebean Best choice if you cherish the
-              full sensory experience Filter For drip or pour-over coffee
-              methods such as V60 or Aeropress Cafetiére Course ground beans
-              specially suited for french press coffee
+              <Accordion title="How much would you like?">
+                250g Perfect for the solo drinker. Yields about 12 delicious
+                cups. 500g Perfect option for a couple. Yields about 40
+                delectable cups. 1000g Perfect for offices and events. Yields
+                about 90 delightful cups.
+              </Accordion>
             </div>
 
             <div className={styles.option}>
-              How often should we deliver? Every week $14.00 per shipment.
-              Includes free first-class shipping. Every 2 weeks $17.25 per
-              shipment. Includes free priority shipping. Every month $22.50 per
-              shipment. Includes free priority shipping.
+              <Accordion title=" Want us to grind them? ">
+                Wholebean Best choice if you cherish the full sensory experience
+                Filter For drip or pour-over coffee methods such as V60 or
+                Aeropress Cafetiére Course ground beans specially suited for
+                french press coffee
+              </Accordion>
+            </div>
+
+            <div className={styles.option}>
+              <Accordion title="How often should we deliver?">
+                Every week $14.00 per shipment. Includes free first-class
+                shipping. Every 2 weeks $17.25 per shipment. Includes free
+                priority shipping. Every month $22.50 per shipment. Includes
+                free priority shipping.
+              </Accordion>
             </div>
           </div>
         </section>
