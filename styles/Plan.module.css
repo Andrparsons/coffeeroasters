@@ -231,3 +231,7 @@
 .optionStatus {
   display: none;
 }
+
+.radioGroup {
+  margin-bottom: 6.875rem;
+}

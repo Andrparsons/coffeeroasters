@@ -8,6 +8,7 @@
   --lightCream: #f3fcf7;
   --grey: #83888f;
   --shadedWhite: #e2dedb;
+  --almostWhite: #f4f1eb;
 
   /* intentions */
 
@@ -42,6 +43,9 @@
   --stepBorder: var(--paleOrange);
 
   --accordionButton: var(--grey);
+  --radioButton: var(--almostWhite);
+  --radioButtonChecked: var(--darkCyan);
+  --radioButtonHover: var(--paleOrange);
 
   /*border radius */
 

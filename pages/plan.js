@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Plan.module.css";
 import Button from "../components/Button/Button";
 import Accordion from "../components/Accordion/Accordion";
+import RadioInput from "../components/RadioInput/RadioInput";
 
 export default function Plan() {
   return (
@@ -78,46 +79,140 @@ export default function Plan() {
           <div className={styles.options}>
             <div className={styles.option}>
               <Accordion title="How do you drink your coffee?">
-                Capsule Compatible with Nespresso systems and similar brewers
-                Filter For pour over or drip methods like Aeropress, Chemex, and
-                V60 Espresso Dense and finely ground beans for an intense,
-                flavorful experience
+                <div className={styles.radioGroup}>
+                  <RadioInput id="style1" name="style" value="capsule">
+                    <h4>Capsule</h4>
+                    <p>Compatible with Nespresso systems and similar brewers</p>
+                  </RadioInput>
+
+                  <RadioInput id="style2" name="style" value="filter">
+                    <h4>Filter</h4>
+                    <p>
+                      For pour over or drip methods like Aeropress, Chemex, and
+                      V60
+                    </p>
+                  </RadioInput>
+
+                  <RadioInput id="style3" name="style" value="espresso">
+                    <h4> Espresso</h4>
+                    <p>
+                      Dense and finely ground beans for an intense, flavorful
+                      experience
+                    </p>
+                  </RadioInput>
+                </div>
               </Accordion>
             </div>
 
             <div className={styles.option}>
               <Accordion title="What type of coffee?">
-                Single origin Distinct, high quality coffee from a specific
-                family-owned farm Decaf Just like regular coffee, except the
-                caffeine has been removed Blended Combination of two or three
-                dark roasted beans of organic coffees
+                <div className={styles.radioGroup}>
+                  <RadioInput id="type1" name="type" value="single origin">
+                    <h4>Single origin</h4>
+                    <p>
+                      Distinct, high quality coffee from a specific family-owned
+                      farm
+                    </p>
+                  </RadioInput>
+
+                  <RadioInput id="type2" name="type" value="decaf">
+                    <h4>Decaf</h4>
+                    <p>
+                      Just like regular coffee, except the caffeine has been
+                      removed
+                    </p>
+                  </RadioInput>
+
+                  <RadioInput id="type3" name="type" value="blended">
+                    <h4>Blended</h4>
+                    <p>
+                      Combination of two or three dark roasted beans of organic
+                      coffees
+                    </p>
+                  </RadioInput>
+                </div>
               </Accordion>
             </div>
 
             <div className={styles.option}>
               <Accordion title="How much would you like?">
-                250g Perfect for the solo drinker. Yields about 12 delicious
-                cups. 500g Perfect option for a couple. Yields about 40
-                delectable cups. 1000g Perfect for offices and events. Yields
-                about 90 delightful cups.
+                <div className={styles.radioGroup}>
+                  <RadioInput id="amount1" name="amount" value="250g">
+                    <h4>250g</h4>
+                    <p>
+                      Perfect for the solo drinker. Yields about 12 delicious
+                      cups.
+                    </p>
+                  </RadioInput>
+
+                  <RadioInput id="amount2" name="amount" value="500g">
+                    <h4>500g</h4>
+                    <p>
+                      Perfect option for a couple. Yields about 40 delectable
+                      cups.
+                    </p>
+                  </RadioInput>
+
+                  <RadioInput id="amount3" name="amount" value="1000g">
+                    <h4>1000g</h4>
+                    <p>
+                      Perfect for offices and events. Yields about 90 delightful
+                      cups.
+                    </p>
+                  </RadioInput>
+                </div>
               </Accordion>
             </div>
 
             <div className={styles.option}>
               <Accordion title=" Want us to grind them? ">
-                Wholebean Best choice if you cherish the full sensory experience
-                Filter For drip or pour-over coffee methods such as V60 or
-                Aeropress Cafetiére Course ground beans specially suited for
-                french press coffee
+                <div className={styles.radioGroup}>
+                  <RadioInput id="grind1" name="grind" value="wholebean">
+                    <h4>Wholebean</h4>
+                    <p>
+                      Best choice if you cherish the full sensory experience
+                    </p>
+                  </RadioInput>
+
+                  <RadioInput id="grind2" name="grind" value="Filter">
+                    <h4>Filter</h4>
+                    <p>
+                      For drip or pour-over coffee methods such as V60 or
+                      Aeropress
+                    </p>
+                  </RadioInput>
+
+                  <RadioInput id="grind3" name="grind" value="cafetiere">
+                    <h4> Cafetiére</h4>
+                    <p>
+                      Course ground beans specially suited for french press
+                      coffee
+                    </p>
+                  </RadioInput>
+                </div>
               </Accordion>
             </div>
 
             <div className={styles.option}>
               <Accordion title="How often should we deliver?">
-                Every week $14.00 per shipment. Includes free first-class
-                shipping. Every 2 weeks $17.25 per shipment. Includes free
-                priority shipping. Every month $22.50 per shipment. Includes
-                free priority shipping.
+                <div className={styles.radioGroup}>
+                  <RadioInput id="grind3" name="grind" value="cafetiere">
+                    <h4>Every week</h4>
+                    <p>
+                      $14.00 per shipment. Includes free first-class shipping.
+                    </p>
+                  </RadioInput>
+
+                  <RadioInput id="grind3" name="grind" value="cafetiere">
+                    <h4>Every 2 weeks</h4>
+                    <p>$17.25 per shipment. Includes free priority shipping.</p>
+                  </RadioInput>
+
+                  <RadioInput id="grind3" name="grind" value="cafetiere">
+                    <h4>Every month</h4>
+                    <p>$22.50 per shipment. Includes free priority shipping.</p>
+                  </RadioInput>
+                </div>
               </Accordion>
             </div>
           </div>

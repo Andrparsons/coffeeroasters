@@ -1,0 +1,20 @@
+.radioKnob {
+  display: none;
+}
+
+.radioContent {
+  text-align: left;
+  padding: 1.5rem;
+  background-color: var(--radioButton);
+  border-radius: var(--radiusSmall);
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.radioKnob:checked + .radioContent {
+  background-color: var(--radioButtonChecked);
+}
+
+.radioKnob:hover + .radioContent {
+  background-color: var(--radioButtonHover);
+}
