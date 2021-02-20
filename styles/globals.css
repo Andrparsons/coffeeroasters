@@ -15,6 +15,7 @@
   --appBg: var(--lightCream);
   --darkBG: var(--darkGreyBlue);
   --highlightBG: var(--darkCyan);
+  --highlightText: var(--darkCyan);
 
   --textDark: var(--darkGreyBlue);
   --textLight: var(--lightCream);
@@ -106,6 +107,18 @@ h3 {
 h4 {
   font-size: 1.5rem;
   line-height: 1.33;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.62;
+  text-transform: uppercase;
+  opacity: 0.5;
+  color: var(--textLight);
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 550px) {

@@ -4,7 +4,15 @@ import Button from "../components/Button/Button";
 import Accordion from "../components/Accordion/Accordion";
 import RadioInput from "../components/RadioInput/RadioInput";
 
+import { useState } from "react";
+
 export default function Plan() {
+  const [style, setStyle] = useState("_____");
+  const [type, setType] = useState("_____");
+  const [amount, setAmount] = useState("_____");
+  const [grind, setGrind] = useState("_____");
+  const [freq, setFreq] = useState("_____");
+
   return (
     <div className={styles.container}>
       <Head>
@@ -196,19 +204,19 @@ export default function Plan() {
             <div className={styles.option}>
               <Accordion title="How often should we deliver?">
                 <div className={styles.radioGroup}>
-                  <RadioInput id="grind3" name="grind" value="cafetiere">
+                  <RadioInput id="freq1" name="freq" value="every week">
                     <h4>Every week</h4>
                     <p>
                       $14.00 per shipment. Includes free first-class shipping.
                     </p>
                   </RadioInput>
 
-                  <RadioInput id="grind3" name="grind" value="cafetiere">
+                  <RadioInput id="freq2" name="freq" value="every two weeks">
                     <h4>Every 2 weeks</h4>
                     <p>$17.25 per shipment. Includes free priority shipping.</p>
                   </RadioInput>
 
-                  <RadioInput id="grind3" name="grind" value="cafetiere">
+                  <RadioInput id="freq3" name="freq" value="every monrth">
                     <h4>Every month</h4>
                     <p>$22.50 per shipment. Includes free priority shipping.</p>
                   </RadioInput>
@@ -219,8 +227,15 @@ export default function Plan() {
         </section>
 
         <div className={styles.summary}>
-          Order Summary “I drink coffee _____, with a _____ type of bean. _____
-          ground ala _____, sent to me _____.”
+          <h5>Order Summary</h5>
+          <p className={styles.summaryContent}>
+            “I drink may coffee as{" "}
+            <span className={styles.summaryOption}>{style}</span>, with a{" "}
+            <span className={styles.summaryOption}>{type}</span> type of bean.{" "}
+            <span className={styles.summaryOption}>{amount}</span> ground ala{" "}
+            <span className={styles.summaryOption}>{grind}</span>, sent to me{" "}
+            <span className={styles.summaryOption}>_____</span>.”
+          </p>
         </div>
 
         <Button>Create my plan!</Button>

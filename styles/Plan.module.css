@@ -235,3 +235,26 @@
 .radioGroup {
   margin-bottom: 6.875rem;
 }
+
+/* order summary */
+
+.summary {
+  background-color: var(--darkBG);
+  color: var(--textLight);
+  text-align: left;
+  padding: 2rem 1.5rem;
+  border-radius: var(--radiusLarge);
+  margin-bottom: 3.5rem;
+}
+
+.summaryContent {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 1.67;
+}
+
+.summaryOption {
+  color: var(--highlightText);
+}
