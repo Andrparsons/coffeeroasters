@@ -272,6 +272,10 @@
   color: var(--highlightText);
 }
 
+.buttonContainer {
+  text-align: center;
+}
+
 @media (min-width: 650px) {
   .summary {
     padding: 1.75rem 2.75rem;

@@ -11,6 +11,7 @@ export default function RadioInput(props) {
         id={props.id}
         name={props.name}
         value={props.value}
+        onChange={props.changed}
       />
       <div className={styles.radioContent}>{props.children}</div>
     </label>

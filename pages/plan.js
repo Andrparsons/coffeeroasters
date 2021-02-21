@@ -87,12 +87,22 @@ export default function Plan() {
           <div className={styles.options}>
             <Accordion title="How do you drink your coffee?">
               <div className={styles.radioGroup}>
-                <RadioInput id="style1" name="style" value="capsule">
+                <RadioInput
+                  id="style1"
+                  name="style"
+                  value="capsule"
+                  changed={(e) => setStyle(e.target.value)}
+                >
                   <h4>Capsule</h4>
                   <p>Compatible with Nespresso systems and similar brewers</p>
                 </RadioInput>
 
-                <RadioInput id="style2" name="style" value="filter">
+                <RadioInput
+                  id="style2"
+                  name="style"
+                  value="filter"
+                  changed={(e) => setStyle(e.target.value)}
+                >
                   <h4>Filter</h4>
                   <p>
                     For pour over or drip methods like Aeropress, Chemex, and
@@ -100,7 +110,12 @@ export default function Plan() {
                   </p>
                 </RadioInput>
 
-                <RadioInput id="style3" name="style" value="espresso">
+                <RadioInput
+                  id="style3"
+                  name="style"
+                  value="espresso"
+                  changed={(e) => setStyle(e.target.value)}
+                >
                   <h4> Espresso</h4>
                   <p>
                     Dense and finely ground beans for an intense, flavorful
@@ -112,7 +127,12 @@ export default function Plan() {
 
             <Accordion title="What type of coffee?">
               <div className={styles.radioGroup}>
-                <RadioInput id="type1" name="type" value="single origin">
+                <RadioInput
+                  id="type1"
+                  name="type"
+                  value="single origin"
+                  changed={(e) => setType(e.target.value)}
+                >
                   <h4>Single origin</h4>
                   <p>
                     Distinct, high quality coffee from a specific family-owned
@@ -120,7 +140,12 @@ export default function Plan() {
                   </p>
                 </RadioInput>
 
-                <RadioInput id="type2" name="type" value="decaf">
+                <RadioInput
+                  id="type2"
+                  name="type"
+                  value="decaf"
+                  changed={(e) => setType(e.target.value)}
+                >
                   <h4>Decaf</h4>
                   <p>
                     Just like regular coffee, except the caffeine has been
@@ -128,7 +153,12 @@ export default function Plan() {
                   </p>
                 </RadioInput>
 
-                <RadioInput id="type3" name="type" value="blended">
+                <RadioInput
+                  id="type3"
+                  name="type"
+                  value="blended"
+                  changed={(e) => setType(e.target.value)}
+                >
                   <h4>Blended</h4>
                   <p>
                     Combination of two or three dark roasted beans of organic
@@ -140,7 +170,12 @@ export default function Plan() {
 
             <Accordion title="How much would you like?">
               <div className={styles.radioGroup}>
-                <RadioInput id="amount1" name="amount" value="250g">
+                <RadioInput
+                  id="amount1"
+                  name="amount"
+                  value="250g"
+                  changed={(e) => setAmount(e.target.value)}
+                >
                   <h4>250g</h4>
                   <p>
                     Perfect for the solo drinker. Yields about 12 delicious
@@ -148,7 +183,12 @@ export default function Plan() {
                   </p>
                 </RadioInput>
 
-                <RadioInput id="amount2" name="amount" value="500g">
+                <RadioInput
+                  id="amount2"
+                  name="amount"
+                  value="500g"
+                  changed={(e) => setAmount(e.target.value)}
+                >
                   <h4>500g</h4>
                   <p>
                     Perfect option for a couple. Yields about 40 delectable
@@ -156,7 +196,12 @@ export default function Plan() {
                   </p>
                 </RadioInput>
 
-                <RadioInput id="amount3" name="amount" value="1000g">
+                <RadioInput
+                  id="amount3"
+                  name="amount"
+                  value="1000g"
+                  changed={(e) => setAmount(e.target.value)}
+                >
                   <h4>1000g</h4>
                   <p>
                     Perfect for offices and events. Yields about 90 delightful
@@ -168,12 +213,22 @@ export default function Plan() {
 
             <Accordion title=" Want us to grind them? ">
               <div className={styles.radioGroup}>
-                <RadioInput id="grind1" name="grind" value="wholebean">
+                <RadioInput
+                  id="grind1"
+                  name="grind"
+                  value="wholebean"
+                  changed={(e) => setGrind(e.target.value)}
+                >
                   <h4>Wholebean</h4>
                   <p>Best choice if you cherish the full sensory experience</p>
                 </RadioInput>
 
-                <RadioInput id="grind2" name="grind" value="Filter">
+                <RadioInput
+                  id="grind2"
+                  name="grind"
+                  value="Filter"
+                  changed={(e) => setGrind(e.target.value)}
+                >
                   <h4>Filter</h4>
                   <p>
                     For drip or pour-over coffee methods such as V60 or
@@ -181,7 +236,12 @@ export default function Plan() {
                   </p>
                 </RadioInput>
 
-                <RadioInput id="grind3" name="grind" value="cafetiere">
+                <RadioInput
+                  id="grind3"
+                  name="grind"
+                  value="cafetiere"
+                  changed={(e) => setGrind(e.target.value)}
+                >
                   <h4> Cafetiére</h4>
                   <p>
                     Course ground beans specially suited for french press coffee
@@ -192,19 +252,34 @@ export default function Plan() {
 
             <Accordion title="How often should we deliver?">
               <div className={styles.radioGroup}>
-                <RadioInput id="freq1" name="freq" value="every week">
+                <RadioInput
+                  id="freq1"
+                  name="freq"
+                  value="every week"
+                  changed={(e) => setFreq(e.target.value)}
+                >
                   <h4>Every week</h4>
                   <p>
                     $14.00 per shipment. Includes free first-class shipping.
                   </p>
                 </RadioInput>
 
-                <RadioInput id="freq2" name="freq" value="every two weeks">
+                <RadioInput
+                  id="freq2"
+                  name="freq"
+                  value="every two weeks"
+                  changed={(e) => setGrind(e.target.value)}
+                >
                   <h4>Every 2 weeks</h4>
                   <p>$17.25 per shipment. Includes free priority shipping.</p>
                 </RadioInput>
 
-                <RadioInput id="freq3" name="freq" value="every month">
+                <RadioInput
+                  id="freq3"
+                  name="freq"
+                  value="every month"
+                  changed={(e) => setGrind(e.target.value)}
+                >
                   <h4>Every month</h4>
                   <p>$22.50 per shipment. Includes free priority shipping.</p>
                 </RadioInput>
@@ -224,7 +299,9 @@ export default function Plan() {
                 .”
               </p>
             </div>
-            <Button>Create my plan!</Button>
+            <div className={styles.buttonContainer}>
+              <Button>Create my plan!</Button>
+            </div>
           </div>
         </section>
       </main>
