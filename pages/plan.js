@@ -268,7 +268,7 @@ export default function Plan() {
                   id="freq2"
                   name="freq"
                   value="every two weeks"
-                  changed={(e) => setGrind(e.target.value)}
+                  changed={(e) => setFreq(e.target.value)}
                 >
                   <h4>Every 2 weeks</h4>
                   <p>$17.25 per shipment. Includes free priority shipping.</p>
@@ -278,7 +278,7 @@ export default function Plan() {
                   id="freq3"
                   name="freq"
                   value="every month"
-                  changed={(e) => setGrind(e.target.value)}
+                  changed={(e) => setFreq(e.target.value)}
                 >
                   <h4>Every month</h4>
                   <p>$22.50 per shipment. Includes free priority shipping.</p>
