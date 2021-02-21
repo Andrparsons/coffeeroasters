@@ -232,8 +232,21 @@
   display: none;
 }
 
+.options {
+  width: 100%;
+  max-width: 730px;
+}
+
 .radioGroup {
   margin-bottom: 6.875rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 650px) {
+  .radioGroup {
+    flex-direction: row;
+  }
 }
 
 /* order summary */
@@ -257,4 +270,10 @@
 
 .summaryOption {
   color: var(--highlightText);
+}
+
+@media (min-width: 650px) {
+  .summary {
+    padding: 1.75rem 2.75rem;
+  }
 }

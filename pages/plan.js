@@ -85,160 +85,148 @@ export default function Plan() {
           </div>
 
           <div className={styles.options}>
-            <div className={styles.option}>
-              <Accordion title="How do you drink your coffee?">
-                <div className={styles.radioGroup}>
-                  <RadioInput id="style1" name="style" value="capsule">
-                    <h4>Capsule</h4>
-                    <p>Compatible with Nespresso systems and similar brewers</p>
-                  </RadioInput>
+            <Accordion title="How do you drink your coffee?">
+              <div className={styles.radioGroup}>
+                <RadioInput id="style1" name="style" value="capsule">
+                  <h4>Capsule</h4>
+                  <p>Compatible with Nespresso systems and similar brewers</p>
+                </RadioInput>
 
-                  <RadioInput id="style2" name="style" value="filter">
-                    <h4>Filter</h4>
-                    <p>
-                      For pour over or drip methods like Aeropress, Chemex, and
-                      V60
-                    </p>
-                  </RadioInput>
+                <RadioInput id="style2" name="style" value="filter">
+                  <h4>Filter</h4>
+                  <p>
+                    For pour over or drip methods like Aeropress, Chemex, and
+                    V60
+                  </p>
+                </RadioInput>
 
-                  <RadioInput id="style3" name="style" value="espresso">
-                    <h4> Espresso</h4>
-                    <p>
-                      Dense and finely ground beans for an intense, flavorful
-                      experience
-                    </p>
-                  </RadioInput>
-                </div>
-              </Accordion>
+                <RadioInput id="style3" name="style" value="espresso">
+                  <h4> Espresso</h4>
+                  <p>
+                    Dense and finely ground beans for an intense, flavorful
+                    experience
+                  </p>
+                </RadioInput>
+              </div>
+            </Accordion>
+
+            <Accordion title="What type of coffee?">
+              <div className={styles.radioGroup}>
+                <RadioInput id="type1" name="type" value="single origin">
+                  <h4>Single origin</h4>
+                  <p>
+                    Distinct, high quality coffee from a specific family-owned
+                    farm
+                  </p>
+                </RadioInput>
+
+                <RadioInput id="type2" name="type" value="decaf">
+                  <h4>Decaf</h4>
+                  <p>
+                    Just like regular coffee, except the caffeine has been
+                    removed
+                  </p>
+                </RadioInput>
+
+                <RadioInput id="type3" name="type" value="blended">
+                  <h4>Blended</h4>
+                  <p>
+                    Combination of two or three dark roasted beans of organic
+                    coffees
+                  </p>
+                </RadioInput>
+              </div>
+            </Accordion>
+
+            <Accordion title="How much would you like?">
+              <div className={styles.radioGroup}>
+                <RadioInput id="amount1" name="amount" value="250g">
+                  <h4>250g</h4>
+                  <p>
+                    Perfect for the solo drinker. Yields about 12 delicious
+                    cups.
+                  </p>
+                </RadioInput>
+
+                <RadioInput id="amount2" name="amount" value="500g">
+                  <h4>500g</h4>
+                  <p>
+                    Perfect option for a couple. Yields about 40 delectable
+                    cups.
+                  </p>
+                </RadioInput>
+
+                <RadioInput id="amount3" name="amount" value="1000g">
+                  <h4>1000g</h4>
+                  <p>
+                    Perfect for offices and events. Yields about 90 delightful
+                    cups.
+                  </p>
+                </RadioInput>
+              </div>
+            </Accordion>
+
+            <Accordion title=" Want us to grind them? ">
+              <div className={styles.radioGroup}>
+                <RadioInput id="grind1" name="grind" value="wholebean">
+                  <h4>Wholebean</h4>
+                  <p>Best choice if you cherish the full sensory experience</p>
+                </RadioInput>
+
+                <RadioInput id="grind2" name="grind" value="Filter">
+                  <h4>Filter</h4>
+                  <p>
+                    For drip or pour-over coffee methods such as V60 or
+                    Aeropress
+                  </p>
+                </RadioInput>
+
+                <RadioInput id="grind3" name="grind" value="cafetiere">
+                  <h4> Cafetiére</h4>
+                  <p>
+                    Course ground beans specially suited for french press coffee
+                  </p>
+                </RadioInput>
+              </div>
+            </Accordion>
+
+            <Accordion title="How often should we deliver?">
+              <div className={styles.radioGroup}>
+                <RadioInput id="freq1" name="freq" value="every week">
+                  <h4>Every week</h4>
+                  <p>
+                    $14.00 per shipment. Includes free first-class shipping.
+                  </p>
+                </RadioInput>
+
+                <RadioInput id="freq2" name="freq" value="every two weeks">
+                  <h4>Every 2 weeks</h4>
+                  <p>$17.25 per shipment. Includes free priority shipping.</p>
+                </RadioInput>
+
+                <RadioInput id="freq3" name="freq" value="every month">
+                  <h4>Every month</h4>
+                  <p>$22.50 per shipment. Includes free priority shipping.</p>
+                </RadioInput>
+              </div>
+            </Accordion>
+
+            <div className={styles.summary}>
+              <h5>Order Summary</h5>
+              <p className={styles.summaryContent}>
+                “I drink may coffee as{" "}
+                <span className={styles.summaryOption}>{style}</span>, with a{" "}
+                <span className={styles.summaryOption}>{type}</span> type of
+                bean. <span className={styles.summaryOption}>{amount}</span>{" "}
+                ground ala <span className={styles.summaryOption}>{grind}</span>
+                , sent to me{" "}
+                <span className={styles.summaryOption}>{freq}</span>
+                .”
+              </p>
             </div>
-
-            <div className={styles.option}>
-              <Accordion title="What type of coffee?">
-                <div className={styles.radioGroup}>
-                  <RadioInput id="type1" name="type" value="single origin">
-                    <h4>Single origin</h4>
-                    <p>
-                      Distinct, high quality coffee from a specific family-owned
-                      farm
-                    </p>
-                  </RadioInput>
-
-                  <RadioInput id="type2" name="type" value="decaf">
-                    <h4>Decaf</h4>
-                    <p>
-                      Just like regular coffee, except the caffeine has been
-                      removed
-                    </p>
-                  </RadioInput>
-
-                  <RadioInput id="type3" name="type" value="blended">
-                    <h4>Blended</h4>
-                    <p>
-                      Combination of two or three dark roasted beans of organic
-                      coffees
-                    </p>
-                  </RadioInput>
-                </div>
-              </Accordion>
-            </div>
-
-            <div className={styles.option}>
-              <Accordion title="How much would you like?">
-                <div className={styles.radioGroup}>
-                  <RadioInput id="amount1" name="amount" value="250g">
-                    <h4>250g</h4>
-                    <p>
-                      Perfect for the solo drinker. Yields about 12 delicious
-                      cups.
-                    </p>
-                  </RadioInput>
-
-                  <RadioInput id="amount2" name="amount" value="500g">
-                    <h4>500g</h4>
-                    <p>
-                      Perfect option for a couple. Yields about 40 delectable
-                      cups.
-                    </p>
-                  </RadioInput>
-
-                  <RadioInput id="amount3" name="amount" value="1000g">
-                    <h4>1000g</h4>
-                    <p>
-                      Perfect for offices and events. Yields about 90 delightful
-                      cups.
-                    </p>
-                  </RadioInput>
-                </div>
-              </Accordion>
-            </div>
-
-            <div className={styles.option}>
-              <Accordion title=" Want us to grind them? ">
-                <div className={styles.radioGroup}>
-                  <RadioInput id="grind1" name="grind" value="wholebean">
-                    <h4>Wholebean</h4>
-                    <p>
-                      Best choice if you cherish the full sensory experience
-                    </p>
-                  </RadioInput>
-
-                  <RadioInput id="grind2" name="grind" value="Filter">
-                    <h4>Filter</h4>
-                    <p>
-                      For drip or pour-over coffee methods such as V60 or
-                      Aeropress
-                    </p>
-                  </RadioInput>
-
-                  <RadioInput id="grind3" name="grind" value="cafetiere">
-                    <h4> Cafetiére</h4>
-                    <p>
-                      Course ground beans specially suited for french press
-                      coffee
-                    </p>
-                  </RadioInput>
-                </div>
-              </Accordion>
-            </div>
-
-            <div className={styles.option}>
-              <Accordion title="How often should we deliver?">
-                <div className={styles.radioGroup}>
-                  <RadioInput id="freq1" name="freq" value="every week">
-                    <h4>Every week</h4>
-                    <p>
-                      $14.00 per shipment. Includes free first-class shipping.
-                    </p>
-                  </RadioInput>
-
-                  <RadioInput id="freq2" name="freq" value="every two weeks">
-                    <h4>Every 2 weeks</h4>
-                    <p>$17.25 per shipment. Includes free priority shipping.</p>
-                  </RadioInput>
-
-                  <RadioInput id="freq3" name="freq" value="every monrth">
-                    <h4>Every month</h4>
-                    <p>$22.50 per shipment. Includes free priority shipping.</p>
-                  </RadioInput>
-                </div>
-              </Accordion>
-            </div>
+            <Button>Create my plan!</Button>
           </div>
         </section>
-
-        <div className={styles.summary}>
-          <h5>Order Summary</h5>
-          <p className={styles.summaryContent}>
-            “I drink may coffee as{" "}
-            <span className={styles.summaryOption}>{style}</span>, with a{" "}
-            <span className={styles.summaryOption}>{type}</span> type of bean.{" "}
-            <span className={styles.summaryOption}>{amount}</span> ground ala{" "}
-            <span className={styles.summaryOption}>{grind}</span>, sent to me{" "}
-            <span className={styles.summaryOption}>_____</span>.”
-          </p>
-        </div>
-
-        <Button>Create my plan!</Button>
       </main>
     </div>
   );

@@ -40,3 +40,15 @@
 
 .active {
 }
+
+@media (min-width: 500px) {
+  .accordionButton {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+  }
+
+  .buttonTitle {
+    max-width: 100%;
+  }
+}

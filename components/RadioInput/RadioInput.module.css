@@ -13,10 +13,32 @@
 
 .radioKnob:checked + .radioContent {
   background-color: var(--radioButtonChecked);
+  color: var(--textLight);
 }
 
 @media (hover: hover) and (pointer: fine) {
   .radioKnob:hover + .radioContent {
     background-color: var(--radioButtonHover);
+  }
+
+  .radioKnob:checked:hover + .radioContent {
+    background-color: var(--radioButtonChecked);
+  }
+}
+
+@media (min-width: 650px) {
+  .radioLabel {
+    margin-right: 0.625rem;
+    flex: 1 1 0px;
+  }
+
+  .radioLabel:last-child {
+    margin-right: 0;
+  }
+
+  .radioContent {
+    margin-bottom: 0;
+    padding: 2rem 1.5rem 5.25rem;
+    height: 100%;
   }
 }
