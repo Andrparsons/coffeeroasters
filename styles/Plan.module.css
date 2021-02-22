@@ -15,10 +15,18 @@
   margin-top: 7.5rem;
 }
 
+.optionSection {
+  margin-bottom: 7.5rem;
+}
+
 @media (min-width: 550px) {
   .stepSection,
   .optionSection {
     margin-top: 9rem;
+  }
+
+  .optionSection {
+    margin-bottom: 9rem;
   }
 }
 
@@ -26,6 +34,10 @@
   .stepSection,
   .optionSection {
     margin-top: 12.5rem;
+  }
+
+  .optionSection {
+    margin-bottom: 12.5rem;
   }
 }
 
@@ -235,6 +247,7 @@
 .options {
   width: 100%;
   max-width: 730px;
+  margin: 0 auto;
 }
 
 .radioGroup {
@@ -246,6 +259,16 @@
 @media (min-width: 650px) {
   .radioGroup {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1000px) {
+  .optionStatus {
+    display: initial;
+  }
+
+  .options {
+    margin: 0;
   }
 }
 
