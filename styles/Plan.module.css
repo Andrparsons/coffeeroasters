@@ -238,6 +238,7 @@
 
 .optionSection {
   display: flex;
+  justify-content: space-around;
 }
 
 .optionStatus {
@@ -264,7 +265,9 @@
 
 @media (min-width: 1000px) {
   .optionStatus {
-    display: initial;
+    display: block;
+    width: 100%;
+    max-width: 255px;
   }
 
   .options {

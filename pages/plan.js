@@ -96,8 +96,11 @@ export default function Plan() {
 
         <section className={styles.optionSection}>
           <div className={styles.optionStatus}>
-            01 Preferences 02 Bean type 03 Quantity 04 Grind option 05
-            Deliveries
+            <div className={styles.optionStatusItem}>01 Preferences</div>
+            <div className={styles.optionStatusItem}>02 Bean type</div>
+            <div className={styles.optionStatusItem}>03 Quantity</div>
+            <div className={styles.optionStatusItem}>04 Grind option</div>
+            <div className={styles.optionStatusItem}>05 Deliveries</div>
           </div>
 
           <div className={styles.options}>
