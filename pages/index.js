@@ -118,8 +118,8 @@ export default function Home() {
               <div className={styles.featureImgContainer}>
                 <IconCoffeeBean
                   className={styles.featureImg}
-                  width="auto"
-                  height="auto"
+                  width="100%"
+                  height="100%"
                   viewBox="0 0 73 72"
                 />
               </div>
@@ -136,8 +136,8 @@ export default function Home() {
               <div className={styles.featureImgContainer}>
                 <IconGift
                   className={styles.featureImg}
-                  width="auto"
-                  height="auto"
+                  width="100%"
+                  height="100%"
                   viewBox="0 0 72 72"
                 />
               </div>
@@ -154,8 +154,8 @@ export default function Home() {
               <div className={styles.featureImgContainer}>
                 <IconTruck
                   className={styles.featureImg}
-                  width="auto"
-                  height="auto"
+                  width="100%"
+                  height="100%"
                   viewBox="0 0 72 50"
                 />
               </div>

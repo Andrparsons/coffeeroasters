@@ -14,7 +14,7 @@ export default function Header() {
       <div className={styles.linkGroup}>
         <Link href="/">
           <a className={styles.logoLink}>
-            <Logo width="auto" height="auto" viewBox="0 0 237 27" />
+            <Logo width="100%" height="100%" viewBox="0 0 237 27" />
           </a>
         </Link>
         <div className={styles.responsiveLinkGroup}>
