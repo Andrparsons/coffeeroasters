@@ -4,7 +4,7 @@ import Button from "../components/Button/Button";
 import Accordion from "../components/Accordion/Accordion";
 import RadioInput from "../components/RadioInput/RadioInput";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Plan() {
   const [style, setStyle] = useState("_____");
@@ -12,6 +12,22 @@ export default function Plan() {
   const [amount, setAmount] = useState("_____");
   const [grind, setGrind] = useState("_____");
   const [freq, setFreq] = useState("_____");
+  const [isNotValid, setIsNotValid] = useState(true);
+
+  //check if all options in plan have been selected
+  useEffect(() => {
+    if (
+      style !== "_____" &&
+      type !== "_____" &&
+      amount !== "_____" &&
+      grind !== "_____" &&
+      freq !== "_____"
+    ) {
+      setIsNotValid(false);
+    } else {
+      setIsNotValid(true);
+    }
+  }, [style, type, amount, grind, freq]);
 
   return (
     <div className={styles.container}>
@@ -300,7 +316,7 @@ export default function Plan() {
               </p>
             </div>
             <div className={styles.buttonContainer}>
-              <Button>Create my plan!</Button>
+              <Button disabled={isNotValid}>Create my plan!</Button>
             </div>
           </div>
         </section>
