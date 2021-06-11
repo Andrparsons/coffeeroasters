@@ -34,7 +34,8 @@ export default function Plan() {
   useEffect(() => {
     if (style === "capsule") {
       setValidGrind(false);
-      setGrind("_____");
+    } else {
+      setValidGrind(true);
     }
   }, [style]);
 
@@ -284,13 +285,18 @@ export default function Plan() {
               </div>
             </Accordion>
 
-            <Accordion title="Want us to grind them?" id="grind">
+            <Accordion
+              title="Want us to grind them?"
+              id="grind"
+              disabled={!validGrind}
+            >
               <div className={styles.radioGroup}>
                 <RadioInput
                   id="grind1"
                   name="grind"
                   value="wholebean"
                   changed={(e) => setGrind(e.target.value)}
+                  disabled={!validGrind}
                 >
                   <h4>Wholebean</h4>
                   <p>Best choice if you cherish the full sensory experience</p>
@@ -301,6 +307,7 @@ export default function Plan() {
                   name="grind"
                   value="Filter"
                   changed={(e) => setGrind(e.target.value)}
+                  disabled={!validGrind}
                 >
                   <h4>Filter</h4>
                   <p>
@@ -314,6 +321,7 @@ export default function Plan() {
                   name="grind"
                   value="cafetiere"
                   changed={(e) => setGrind(e.target.value)}
+                  disabled={!validGrind}
                 >
                   <h4> Cafetiére</h4>
                   <p>
@@ -367,7 +375,7 @@ export default function Plan() {
                 <span className={styles.summaryOption}>{type}</span> type of
                 bean.
                 <span className={styles.summaryOption}>{amount}</span>{" "}
-                <span className={styles.grindToggle}>
+                <span className={validGrind ? null : styles.grindDisable}>
                   ground ala{" "}
                   <span className={styles.summaryOption}>{grind}</span>
                 </span>

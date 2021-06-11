@@ -22,6 +22,7 @@ export default function Accordion(props) {
       <button
         className={`${styles.accordionButton} ${styles[active]}`}
         onClick={toggle}
+        disabled={props.disabled}
       >
         <div className={styles.buttonTitle}>{props.title}</div>
         <IconArrow className={`${styles.icon} ${styles[rotate]}`} />

@@ -12,6 +12,7 @@ export default function RadioInput(props) {
         name={props.name}
         value={props.value}
         onChange={props.changed}
+        disabled={props.disabled}
       />
       <div className={styles.radioContent}>{props.children}</div>
     </label>
