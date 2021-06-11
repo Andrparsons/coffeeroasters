@@ -13,6 +13,7 @@ export default function Plan() {
   const [grind, setGrind] = useState("_____");
   const [freq, setFreq] = useState("_____");
   const [isNotValid, setIsNotValid] = useState(true);
+  const [validGrind, setValidGrind] = useState(true);
 
   //check if all options in plan have been selected
   useEffect(() => {
@@ -28,6 +29,14 @@ export default function Plan() {
       setIsNotValid(true);
     }
   }, [style, type, amount, grind, freq]);
+
+  //disable grind options if capsules picked
+  useEffect(() => {
+    if (style === "capsule") {
+      setValidGrind(false);
+      setGrind("_____");
+    }
+  }, [style]);
 
   return (
     <div className={styles.container}>
@@ -96,15 +105,60 @@ export default function Plan() {
 
         <section className={styles.optionSection}>
           <div className={styles.optionStatus}>
-            <div className={styles.optionStatusItem}>01 Preferences</div>
-            <div className={styles.optionStatusItem}>02 Bean type</div>
-            <div className={styles.optionStatusItem}>03 Quantity</div>
-            <div className={styles.optionStatusItem}>04 Grind option</div>
-            <div className={styles.optionStatusItem}>05 Deliveries</div>
+            <div
+              className={
+                style !== "_____"
+                  ? styles.optionStatusItem
+                  : `${styles.optionStatusItem} ${styles.optionStatusMissing}`
+              }
+            >
+              <span className={styles.optionNumPrime}>01</span>
+              <a href="#pref">Preferences</a>
+            </div>
+            <div
+              className={
+                type !== "_____"
+                  ? styles.optionStatusItem
+                  : `${styles.optionStatusItem} ${styles.optionStatusMissing}`
+              }
+            >
+              <span className={styles.optionNum}>02</span>
+              <a href="#bean">Bean type</a>
+            </div>
+            <div
+              className={
+                amount !== "_____"
+                  ? styles.optionStatusItem
+                  : `${styles.optionStatusItem} ${styles.optionStatusMissing}`
+              }
+            >
+              <span className={styles.optionNum}>03</span>
+              <a href="#quantity">Quantity </a>
+            </div>
+            <div
+              className={
+                grind !== "_____"
+                  ? styles.optionStatusItem
+                  : `${styles.optionStatusItem} ${styles.optionStatusMissing}`
+              }
+            >
+              <span className={styles.optionNum}>04</span>
+              <a href="#grind">Grind option</a>
+            </div>
+            <div
+              className={
+                freq !== "_____"
+                  ? styles.optionStatusItem
+                  : `${styles.optionStatusItem} ${styles.optionStatusMissing}`
+              }
+            >
+              <span className={styles.optionNum}>05</span>
+              <a href="#delivery">Deliveries</a>
+            </div>
           </div>
 
           <div className={styles.options}>
-            <Accordion title="How do you drink your coffee?">
+            <Accordion title="How do you drink your coffee?" id="pref">
               <div className={styles.radioGroup}>
                 <RadioInput
                   id="style1"
@@ -144,7 +198,7 @@ export default function Plan() {
               </div>
             </Accordion>
 
-            <Accordion title="What type of coffee?">
+            <Accordion title="What type of coffee?" id="bean">
               <div className={styles.radioGroup}>
                 <RadioInput
                   id="type1"
@@ -187,7 +241,7 @@ export default function Plan() {
               </div>
             </Accordion>
 
-            <Accordion title="How much would you like?">
+            <Accordion title="How much would you like?" id="quantity">
               <div className={styles.radioGroup}>
                 <RadioInput
                   id="amount1"
@@ -230,7 +284,7 @@ export default function Plan() {
               </div>
             </Accordion>
 
-            <Accordion title=" Want us to grind them? ">
+            <Accordion title="Want us to grind them?" id="grind">
               <div className={styles.radioGroup}>
                 <RadioInput
                   id="grind1"
@@ -269,7 +323,7 @@ export default function Plan() {
               </div>
             </Accordion>
 
-            <Accordion title="How often should we deliver?">
+            <Accordion title="How often should we deliver?" id="delivery">
               <div className={styles.radioGroup}>
                 <RadioInput
                   id="freq1"
@@ -311,8 +365,12 @@ export default function Plan() {
                 “I drink may coffee as{" "}
                 <span className={styles.summaryOption}>{style}</span>, with a{" "}
                 <span className={styles.summaryOption}>{type}</span> type of
-                bean. <span className={styles.summaryOption}>{amount}</span>{" "}
-                ground ala <span className={styles.summaryOption}>{grind}</span>
+                bean.
+                <span className={styles.summaryOption}>{amount}</span>{" "}
+                <span className={styles.grindToggle}>
+                  ground ala{" "}
+                  <span className={styles.summaryOption}>{grind}</span>
+                </span>
                 , sent to me{" "}
                 <span className={styles.summaryOption}>{freq}</span>
                 .”

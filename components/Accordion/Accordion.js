@@ -18,7 +18,7 @@ export default function Accordion(props) {
   }
 
   return (
-    <div className={styles.accordion}>
+    <div className={styles.accordion} id={props.id}>
       <button
         className={`${styles.accordionButton} ${styles[active]}`}
         onClick={toggle}

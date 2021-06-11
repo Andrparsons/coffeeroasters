@@ -245,6 +245,35 @@
   display: none;
 }
 
+.optionStatusItem {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 1em 0;
+  border-bottom: solid 1px #83888f40;
+}
+
+.optionStatusItem:first-of-type {
+  padding-top: 0;
+}
+
+.optionStatusItem:last-of-type {
+  border-bottom: none;
+}
+
+.optionStatusMissing {
+  opacity: 0.4;
+}
+
+.optionNum {
+  margin-right: 1em;
+}
+
+.optionNumPrime {
+  margin-right: 1em;
+  color: var(--highlightText);
+}
+
 .options {
   width: 100%;
   max-width: 730px;
@@ -268,6 +297,10 @@
     display: block;
     width: 100%;
     max-width: 255px;
+    position: sticky;
+    align-self: flex-start;
+    height: auto;
+    top: 5rem;
   }
 
   .options {
