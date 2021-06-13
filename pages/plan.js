@@ -34,10 +34,14 @@ export default function Plan() {
   useEffect(() => {
     if (style === "capsule") {
       setValidGrind(false);
+      setGrind("n/a");
+    } else if (style !== "capsule" && grind === "n/a") {
+      setValidGrind(true);
+      setGrind("_____");
     } else {
       setValidGrind(true);
     }
-  }, [style]);
+  }, [style, grind]);
 
   return (
     <div className={styles.container}>
@@ -136,16 +140,25 @@ export default function Plan() {
               <span className={styles.optionNum}>03</span>
               <a href="#quantity">Quantity </a>
             </div>
-            <div
-              className={
-                grind !== "_____"
-                  ? styles.optionStatusItem
-                  : `${styles.optionStatusItem} ${styles.optionStatusMissing}`
-              }
-            >
-              <span className={styles.optionNum}>04</span>
-              <a href="#grind">Grind option</a>
-            </div>
+            {validGrind ? (
+              <div
+                className={
+                  grind !== "_____"
+                    ? styles.optionStatusItem
+                    : `${styles.optionStatusItem} ${styles.optionStatusMissing}`
+                }
+              >
+                <span className={styles.optionNum}>04</span>
+                <a href="#grind">Grind option</a>
+              </div>
+            ) : (
+              <div
+                className={`${styles.optionStatusItem} ${styles.optionStatusDisabled}`}
+              >
+                <span className={styles.optionNum}>04</span>
+                <a href="#grind">Grind option</a>
+              </div>
+            )}
             <div
               className={
                 freq !== "_____"

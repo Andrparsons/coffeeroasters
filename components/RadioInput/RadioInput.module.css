@@ -16,6 +16,16 @@
   color: var(--textLight);
 }
 
+.radioKnob:disabled + .radioContent {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.radioKnob:checked:disabled + .radioContent {
+  background-color: var(--radioButton);
+  color: var(--textDark);
+}
+
 @media (hover: hover) and (pointer: fine) {
   .radioKnob:hover + .radioContent {
     background-color: var(--radioButtonHover);
@@ -23,6 +33,14 @@
 
   .radioKnob:checked:hover + .radioContent {
     background-color: var(--radioButtonChecked);
+  }
+
+  .radioKnob:disabled:hover + .radioContent {
+    background-color: var(--radioButton);
+  }
+
+  .radioKnob:checked:disabled:hover + .radioContent {
+    background-color: var(--radioButton);
   }
 }
 

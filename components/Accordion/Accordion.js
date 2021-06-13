@@ -1,7 +1,7 @@
 import styles from "./Accordion.module.css";
 import { IconArrow } from "../SvgComponents/plan";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 export default function Accordion(props) {
   const [active, setActive] = useState("");
@@ -16,6 +16,10 @@ export default function Accordion(props) {
     );
     setRotate(active === "active" ? "" : "rotate");
   }
+
+  useEffect(() => {
+    props.disabled ? toggle() : null;
+  }, [props.disabled]);
 
   return (
     <div className={styles.accordion} id={props.id}>

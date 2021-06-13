@@ -265,6 +265,10 @@
   opacity: 0.4;
 }
 
+.optionStatusDisabled {
+  opacity: 0.2;
+}
+
 .optionNum {
   margin-right: 1em;
 }
