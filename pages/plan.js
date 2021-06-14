@@ -1,10 +1,13 @@
 import Head from "next/head";
+import ReactModal from "react-modal";
 import styles from "../styles/Plan.module.css";
 import Button from "../components/Button/Button";
 import Accordion from "../components/Accordion/Accordion";
 import RadioInput from "../components/RadioInput/RadioInput";
 
 import { useState, useEffect } from "react";
+
+ReactModal.setAppElement("#__next");
 
 export default function Plan() {
   const [style, setStyle] = useState("_____");
@@ -14,6 +17,7 @@ export default function Plan() {
   const [freq, setFreq] = useState("_____");
   const [isNotValid, setIsNotValid] = useState(true);
   const [validGrind, setValidGrind] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   //check if all options in plan have been selected
   useEffect(() => {
@@ -43,8 +47,29 @@ export default function Plan() {
     }
   }, [style, grind]);
 
+  //modal handlers
+  function handleOpenModal() {
+    setShowModal(true);
+  }
+
+  function handleCloseModal() {
+    setShowModal(false);
+  }
+
   return (
     <div className={styles.container}>
+      <ReactModal
+        isOpen={showModal}
+        contentLabel="Order Summary"
+        onRequestClose={handleCloseModal}
+        className={styles.modal}
+        overlayClassName={styles.overlay}
+        preventScroll={true}
+      >
+        <p>Open Modal</p>
+        <button onClick={handleCloseModal}>Close</button>
+      </ReactModal>
+
       <Head>
         <title>coffeeroasters | Create a Plan</title>
         <link rel="icon" href="/favicon.ico" />
@@ -398,7 +423,9 @@ export default function Plan() {
               </p>
             </div>
             <div className={styles.buttonContainer}>
-              <Button disabled={isNotValid}>Create my plan!</Button>
+              <Button action={handleOpenModal} disabled={isNotValid}>
+                Create my plan!
+              </Button>
             </div>
           </div>
         </section>

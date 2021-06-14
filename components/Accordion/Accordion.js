@@ -17,10 +17,6 @@ export default function Accordion(props) {
     setRotate(active === "active" ? "" : "rotate");
   }
 
-  useEffect(() => {
-    props.disabled ? toggle() : null;
-  }, [props.disabled]);
-
   return (
     <div className={styles.accordion} id={props.id}>
       <button

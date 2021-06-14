@@ -348,3 +348,21 @@
     padding: 1.75rem 2.75rem;
   }
 }
+
+/* modal */
+
+.modal {
+  background-color: red;
+  inset: 2.1875rem 1.5rem;
+  position: absolute;
+  max-width: 540px;
+  max-height: 597px;
+  margin: auto;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: #00000080;
+  z-index: 100;
+}
